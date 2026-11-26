@@ -1,0 +1,3 @@
+model,direction,n,BLEU,chrF++,TER
+Copy source (no translation),bcl_South → bcl_North,236,15.492766265817526,46.043643976559025,70.43478260869566
+Copy source (no translation),bcl_North → bcl_South,236,15.644533170845072,45.30491941980341,66.94214876033058
