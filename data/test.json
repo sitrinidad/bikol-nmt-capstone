@@ -1,0 +1,1647 @@
+[
+ {
+  "id":3,
+  "orig_no":4.0,
+  "eng":"Is the rice cooked already?",
+  "bcl_South":"Unog na ba so maluto?",
+  "bcl_North":"Unog na yu humay?"
+ },
+ {
+  "id":16,
+  "orig_no":17.0,
+  "eng":"Get your dad from the drinking session.",
+  "bcl_South":"Susudon mo ama mo duman sa inuman.",
+  "bcl_North":"Susuda daw dun si ama mo sa inuman."
+ },
+ {
+  "id":18,
+  "orig_no":19.0,
+  "eng":"I'll slap you!",
+  "bcl_South":"Sapakon ta ka!",
+  "bcl_North":"Rapaduhon ta ka!"
+ },
+ {
+  "id":34,
+  "orig_no":35.0,
+  "eng":"You should exercise because your belly is getting bigger.",
+  "bcl_South":"Mag exercise ka ta ang tulak mo gapay dakula.",
+  "bcl_North":"Pag exercise ngani ta yang tindos mo gaparsarig."
+ },
+ {
+  "id":62,
+  "orig_no":63.0,
+  "eng":"I don't feel like walking.",
+  "bcl_South":"Nakangalas maglakaw.",
+  "bcl_North":"Naharang ako magpanaw."
+ },
+ {
+  "id":65,
+  "orig_no":66.0,
+  "eng":"Cover the food on the table or the cat will eat it.",
+  "bcl_South":"Takpan mo daw so pagkaon ta tibaad kaunon ning kuting.",
+  "bcl_North":"Takpuran mo yu pagkaon sa lamesa ta kung mai kakaunon yan ning kurasmag."
+ },
+ {
+  "id":71,
+  "orig_no":72.0,
+  "eng":"Your hands are so smooth.",
+  "bcl_South":"Pagkaniyumhok ning kamot mo.",
+  "bcl_North":"Yuryumhok man ning kamot mo."
+ },
+ {
+  "id":72,
+  "orig_no":73.0,
+  "eng":"When are you coming home?",
+  "bcl_South":"Saarin ka maparibod?",
+  "bcl_North":"Sano ka maparibod?"
+ },
+ {
+  "id":73,
+  "orig_no":74.0,
+  "eng":"My body aches.",
+  "bcl_South":"Ang kulog ning ginhawa ko.",
+  "bcl_North":"Ang hapdos ning ginhawa ko."
+ },
+ {
+  "id":81,
+  "orig_no":82.0,
+  "eng":"How much is the fare to your house?",
+  "bcl_South":"Apila ang pamasahe papunta sa halong niyo?",
+  "bcl_North":"Amila yung pamasahe papunta sa baray ninyo?"
+ },
+ {
+  "id":85,
+  "orig_no":86.0,
+  "eng":"I am going to the market to buy fish and vegetables.",
+  "bcl_South":"Mapunta ako sa saod para magbakal ning sila tapos gulay.",
+  "bcl_North":"Mapunta ako sa saod para magbakar ning isda buda gulay."
+ },
+ {
+  "id":90,
+  "orig_no":91.0,
+  "eng":"Good evening!",
+  "bcl_South":"Maray na banggi!",
+  "bcl_North":"Madyag na gabi!"
+ },
+ {
+  "id":92,
+  "orig_no":93.0,
+  "eng":"Who is with you?",
+  "bcl_South":"Sisay yang kaibahan mo?",
+  "bcl_North":"Sino man yan na kaibahan mo?"
+ },
+ {
+  "id":102,
+  "orig_no":103.0,
+  "eng":"The sun is hot today.",
+  "bcl_South":"Ang init ning aldaw ngunyan.",
+  "bcl_North":"Grabi yang init nintong ardaw."
+ },
+ {
+  "id":106,
+  "orig_no":107.0,
+  "eng":"The sky is dark.",
+  "bcl_South":"Madulom ang kalangitan.",
+  "bcl_North":"Madurom yang kalangitan."
+ },
+ {
+  "id":107,
+  "orig_no":108.0,
+  "eng":"The tide is high.",
+  "bcl_South":"Taob ang dagat.",
+  "bcl_North":"Taob yu dagat."
+ },
+ {
+  "id":108,
+  "orig_no":109.0,
+  "eng":"The tide is low.",
+  "bcl_South":"Hunas ang dagat.",
+  "bcl_North":"Hunas yu dagat."
+ },
+ {
+  "id":121,
+  "orig_no":122.0,
+  "eng":"Drop me off at the market.",
+  "bcl_South":"Ibaba mo tabi ako sa saod.",
+  "bcl_North":"Sa saod mo tabi ako ibaba."
+ },
+ {
+  "id":142,
+  "orig_no":143.0,
+  "eng":"You're welcome!",
+  "bcl_South":"Daing anuman!",
+  "bcl_North":"Maing anuman!"
+ },
+ {
+  "id":144,
+  "orig_no":145.0,
+  "eng":"Have a nice day.",
+  "bcl_South":"Magayon na aldaw saimo.",
+  "bcl_North":"Nawa'y maging magayon yang ardaw mo."
+ },
+ {
+  "id":148,
+  "orig_no":149.0,
+  "eng":"What do you want to eat?",
+  "bcl_South":"Anong gusto mong kaunon?",
+  "bcl_North":"Ano yu gusto mong kaunon?"
+ },
+ {
+  "id":152,
+  "orig_no":153.0,
+  "eng":"No, I am full.",
+  "bcl_South":"Bako, basog na ako.",
+  "bcl_North":"Dili ko, busog na ako."
+ },
+ {
+  "id":166,
+  "orig_no":167.0,
+  "eng":"Where is the bathroom?",
+  "bcl_South":"Hain an CR?",
+  "bcl_North":"Ahin yung CR?"
+ },
+ {
+  "id":167,
+  "orig_no":168.0,
+  "eng":"Go straight ahead.",
+  "bcl_South":"Magderetso ka sana.",
+  "bcl_North":"Daretso sana."
+ },
+ {
+  "id":170,
+  "orig_no":171.0,
+  "eng":"Stop here, please.",
+  "bcl_South":"Magtunong ka tabi uya.",
+  "bcl_North":"Magpunok ka tabi dito."
+ },
+ {
+  "id":181,
+  "orig_no":182.0,
+  "eng":"What time is it now?",
+  "bcl_South":"Anong oras na ngunyan?",
+  "bcl_North":"Anong oras na ninto?"
+ },
+ {
+  "id":186,
+  "orig_no":187.0,
+  "eng":"I love you very much.",
+  "bcl_South":"Namomotan taka ning sobra.",
+  "bcl_North":"Grabi yang pagkamuot ko saimo."
+ },
+ {
+  "id":191,
+  "orig_no":192.0,
+  "eng":"I have a high fever now.",
+  "bcl_South":"Igwa ako nin halangkaw na trangkaso ngunyan.",
+  "bcl_North":"Igakalintura ako ninto."
+ },
+ {
+  "id":197,
+  "orig_no":198.0,
+  "eng":"Be careful on the road.",
+  "bcl_South":"Mag-ingat ka sa tinampo.",
+  "bcl_North":"Mag-ingat ka sa daran."
+ },
+ {
+  "id":204,
+  "orig_no":205.0,
+  "eng":"What does this word mean?",
+  "bcl_South":"Ano an ibig sabihon kan tatalamon na ini?",
+  "bcl_North":"Ano yang ibig sabihon ning tataramon na to?"
+ },
+ {
+  "id":209,
+  "orig_no":210.0,
+  "eng":"The children are playing outside.",
+  "bcl_South":"Nagkakawat an mga aki sa luwas.",
+  "bcl_North":"Gapaninyaw yu mga bata sa luwas."
+ },
+ {
+  "id":210,
+  "orig_no":211.0,
+  "eng":"My mother is cooking in the kitchen.",
+  "bcl_South":"Nagluluto an sakong ina sa kusina.",
+  "bcl_North":"Galuto si mama sa kusina."
+ },
+ {
+  "id":215,
+  "orig_no":216.0,
+  "eng":"Birds are flying in the sky.",
+  "bcl_South":"Galalayog an mga gamgam sa langit.",
+  "bcl_North":"Galayog yang mga iwata sa langit."
+ },
+ {
+  "id":220,
+  "orig_no":221.0,
+  "eng":"Let me examine your throat and ears.",
+  "bcl_South":"Hilingon ta an saimong halunan buda taringa.",
+  "bcl_North":"Kitaon ta daw yu imong tuturnan buda taringa."
+ },
+ {
+  "id":247,
+  "orig_no":248.0,
+  "eng":"Get the mosquito net.",
+  "bcl_South":"Kuhaon mo so kulambo.",
+  "bcl_North":"Kuhaa daw yu kulambo."
+ },
+ {
+  "id":252,
+  "orig_no":253.0,
+  "eng":"My stomach hurts badly.",
+  "bcl_South":"Makulog sobra ang sakong tulak.",
+  "bcl_North":"Gahinapdos ning bituka ko."
+ },
+ {
+  "id":275,
+  "orig_no":276.0,
+  "eng":"Knowledge is power.",
+  "bcl_South":"An kaaraman salong kapangyarihan.",
+  "bcl_North":"Yang kaaraman kapangyarihan."
+ },
+ {
+  "id":284,
+  "orig_no":285.0,
+  "eng":"Many surfers visit Catanduanes.",
+  "bcl_South":"Dakol na mga surfers an nagbibisita sa Catanduanes.",
+  "bcl_North":"Kadakor na surfers yang gabisita sa Catanduanes."
+ },
+ {
+  "id":292,
+  "orig_no":293.0,
+  "eng":"Yes, it needs lots of chili and coconut milk.",
+  "bcl_South":"Iyo, kaipuhan kaiyan nin dakol na sili asin gata.",
+  "bcl_North":"Oho, kaipuhan ninyan ning kadakor na sili buda natok ning lobi."
+ },
+ {
+  "id":296,
+  "orig_no":297.0,
+  "eng":"It is refreshing on a hot day.",
+  "bcl_South":"Makakapresko ini sa mainit na aldaw.",
+  "bcl_North":"Makapresko sa mainiton na ardaw."
+ },
+ {
+  "id":299,
+  "orig_no":300.0,
+  "eng":"I am completely full now.",
+  "bcl_South":"Basog na basog na ako ngunyan.",
+  "bcl_North":"Busog-busog ko na ninto."
+ },
+ {
+  "id":318,
+  "orig_no":319.0,
+  "eng":"People help each other build houses.",
+  "bcl_South":"Nagtatabangan an mga tawo sa pagtogdok nin halong.",
+  "bcl_North":"Gatarabangan yang mga taho sa paggibo ning baray."
+ },
+ {
+  "id":321,
+  "orig_no":322.0,
+  "eng":"Technology changes how we communicate.",
+  "bcl_South":"Pinapabago kan teknolohiya an pano ta pagtaram.",
+  "bcl_North":"Igabago ning teknolohiya yung paraan ning atong pakikipaghuronhuron."
+ },
+ {
+  "id":322,
+  "orig_no":323.0,
+  "eng":"Smartphones make connection easier.",
+  "bcl_South":"Nagiging madari an koneksyon huli sa mga cellphone.",
+  "bcl_North":"Igapadari ning smartphone yang atong pakikipag-ugnayan."
+ },
+ {
+  "id":328,
+  "orig_no":329.0,
+  "eng":"Our capstone project will succeed.",
+  "bcl_South":"Magiging matrayumpo an satuyang proyekto.",
+  "bcl_North":"Magiging matagumpay yu atong capstone project."
+ },
+ {
+  "id":339,
+  "orig_no":340.0,
+  "eng":"The water supply will be cut off again.",
+  "bcl_South":"Dai nanaman gailig so gripo.",
+  "bcl_North":"Yang gripo mai na naman matubod."
+ },
+ {
+  "id":345,
+  "orig_no":346.0,
+  "eng":"The weather has really changed so much.",
+  "bcl_South":"Paiba-iba na talaga panahon ngunyan.",
+  "bcl_North":"Ibang-iba na talaga yang panahon ninto."
+ },
+ {
+  "id":352,
+  "orig_no":353.0,
+  "eng":"Exactly! I think we need more practical and long-term solutions.",
+  "bcl_South":"Eksakto! Sa palagay ko mas kaipuhan ta pa ning mas praktikal tapos mas maawat na solusyon.",
+  "bcl_North":"Eksakto! Sa tanaw ko, kaipuhan nato ning mas praktikal buda yung panghurayan na solusyon."
+ },
+ {
+  "id":356,
+  "orig_no":357.0,
+  "eng":"But the water still needs to be confirmed safe for drinking, right?",
+  "bcl_South":"Pero kaipuhan pa man syempre na e-konpirma na pwedeng mainom so tubig, iyo?",
+  "bcl_North":"Pero kaipuhan man siyempreng siguruhon kung pwedeng inumon yung tubig, iso?"
+ },
+ {
+  "id":362,
+  "orig_no":363.0,
+  "eng":"They should also improve water supply systems and irrigation.",
+  "bcl_South":"Kaipuhan ninda man lamang ninda na ayuson ang supply nin tubig buda irigasyon.",
+  "bcl_North":"Dapat man nilang turturon yu mga sistema ning suplay ning tubig buda irigasyon."
+ },
+ {
+  "id":365,
+  "orig_no":366.0,
+  "eng":"True, but the government also needs a long-term plan.",
+  "bcl_South":"Totoo, pero kaipuhan pa man syempr ning gobyerno ang mas hulo halawig na plano.",
+  "bcl_North":"Husto, pero kaipuhan man ning gobyerno ning panghurayang plano."
+ },
+ {
+  "id":366,
+  "orig_no":367.0,
+  "eng":"Absolutely! We need more than buckets to deal with El Niño.",
+  "bcl_South":"Tama! Bakong sapat yang mga balde sana para areglohon yang EL Nino na yan.",
+  "bcl_North":"Tama! Bukong sapat yang mga balde sana para atubangon yang El Nino na yan."
+ },
+ {
+  "id":371,
+  "orig_no":372.0,
+  "eng":"Put the books back on the shelf.",
+  "bcl_South":"Lagayon mo an mga libro sa estante.",
+  "bcl_North":"Ibarik mo yung mga libro sa estante."
+ },
+ {
+  "id":383,
+  "orig_no":384.0,
+  "eng":"Collaboration leads to great success.",
+  "bcl_South":"Ang pagtatabangan ang magdadala nin dakulang kapangganahan.",
+  "bcl_North":"Yang pagtarabangan gadulot ning dakurong kapangganahan."
+ },
+ {
+  "id":398,
+  "orig_no":399.0,
+  "eng":"Salty air touches our faces.",
+  "bcl_South":"Maasgad ang hangin na gasapok sa pandok ko.",
+  "bcl_North":"Gadampi saakong hawong yang maasgad na simoy ning hangin."
+ },
+ {
+  "id":412,
+  "orig_no":413.0,
+  "eng":"Butterflies are flying around the garden.",
+  "bcl_South":"Ang mga karibangbang galalayog sa hardin.",
+  "bcl_North":"Galayog yang mga karibangbang sa palibot ning garden."
+ },
+ {
+  "id":418,
+  "orig_no":419.0,
+  "eng":"I know, we reviewed so much.",
+  "bcl_South":"Alam ko, kadinakol ning ni-review ta.",
+  "bcl_North":"Kaya ngani, saray pa naman review ta."
+ },
+ {
+  "id":419,
+  "orig_no":420.0,
+  "eng":"Can you believe we failed that subject?",
+  "bcl_South":"Dai ka makapaniwala na nagbagsak kita sa subject na ito?",
+  "bcl_North":"Mai ka ba makapanubod na nagbagsak kita sa subject na yun?"
+ },
+ {
+  "id":425,
+  "orig_no":426.0,
+  "eng":"Are you happy with our remedial results?",
+  "bcl_South":"Maogma ka sa satuyang resulta sa remedial?",
+  "bcl_North":"Maugma ka sa result ning remedial?"
+ },
+ {
+  "id":431,
+  "orig_no":432.0,
+  "eng":"How about our other two subjects?",
+  "bcl_South":"Pano man lugod so duwang subject?",
+  "bcl_North":"Una yu ibang dawhang subjects?"
+ },
+ {
+  "id":436,
+  "orig_no":437.0,
+  "eng":"Yes, especially as fourth-year students.",
+  "bcl_South":"Iyo, lalo na ngunyan na fourth-year students.",
+  "bcl_North":"Oho, lalo na saatong fourth-year students."
+ },
+ {
+  "id":446,
+  "orig_no":447.0,
+  "eng":"Yes, and we did better this time.",
+  "bcl_South":"Iyo, nabawi ta naman ngunyan.",
+  "bcl_North":"Oho, nabawi ta naman ninto."
+ },
+ {
+  "id":447,
+  "orig_no":448.0,
+  "eng":"Our thesis doesn't have an exam, right?",
+  "bcl_South":"Ang satong thesis dai man ning exam, tama?",
+  "bcl_North":"Yung thesis ta mai man yun exam, ano?"
+ },
+ {
+  "id":450,
+  "orig_no":451.0,
+  "eng":"True, but we survived it.",
+  "bcl_South":"Totoo, pero nalagpasan ta man ba ga.",
+  "bcl_North":"Totoo, pero nalampasan nato yun."
+ },
+ {
+  "id":462,
+  "orig_no":463.0,
+  "eng":"I hope we can answer them well.",
+  "bcl_South":"Sana makasimbag kita ning maayos.",
+  "bcl_North":"Sana masimbag nato yun ning turtor."
+ },
+ {
+  "id":474,
+  "orig_no":475.0,
+  "eng":"Honestly, we're already behind.",
+  "bcl_South":"Sa totoo lang, grabing huri ta na.",
+  "bcl_North":"Sa kahustuhan, grabing murhi ta na."
+ },
+ {
+  "id":486,
+  "orig_no":487.0,
+  "eng":"Of course, we need each other.",
+  "bcl_South":"Pwede man, kaipuhan ta ang kada salo.",
+  "bcl_North":"Una iso, kaipuhan nato yu kada sado."
+ },
+ {
+  "id":494,
+  "orig_no":495.0,
+  "eng":"Me neither, we're running out of time.",
+  "bcl_South":"Ako man, dai na kitang oras.",
+  "bcl_North":"Ako man, mai na kitang oras."
+ },
+ {
+  "id":495,
+  "orig_no":496.0,
+  "eng":"Hopefully, we'll pass our pre-oral defense.",
+  "bcl_South":"Sana, makapasa kita sa satuyang pre-oral defense.",
+  "bcl_North":"Sana, mapasa nato yung pre-oral defense."
+ },
+ {
+  "id":506,
+  "orig_no":507.0,
+  "eng":"Sweep the floor carefully.",
+  "bcl_South":"Samhodan mo ning tultol ang salog.",
+  "bcl_North":"Samhudan mo ning turtor yu sarog."
+ },
+ {
+  "id":509,
+  "orig_no":510.0,
+  "eng":"Iron your uniform for school tomorrow.",
+  "bcl_South":"Plantyahan mo yang uniporme mo para sa eskwela saaga.",
+  "bcl_North":"Plantsahon mo yung uniform para sa eskwela saaga."
+ },
+ {
+  "id":516,
+  "orig_no":517.0,
+  "eng":"Stay away from people who are sick.",
+  "bcl_South":"Maghalayo ka sa mga tawong igwang kulog.",
+  "bcl_North":"Likayan mo yang mga tahong igakarudog,."
+ },
+ {
+  "id":517,
+  "orig_no":518.0,
+  "eng":"Eating fruits gives you vitamins.",
+  "bcl_South":"Ang pagkaon nin mga prutas gatao nin bitamina.",
+  "bcl_North":"Yang pagkaon ning prutas matao saimo ning vitamins."
+ },
+ {
+  "id":532,
+  "orig_no":533.0,
+  "eng":"Clean your table after eating snack.",
+  "bcl_South":"Linigan mo ang lamesa mo pagkatapos mong magkaon.",
+  "bcl_North":"Limpyahan mo yang imong lamesa pakatapos mo magkaon ning snack."
+ },
+ {
+  "id":536,
+  "orig_no":537.0,
+  "eng":"I hope I get a high grade.",
+  "bcl_South":"Sana makakuha ako nin halangkaw na grado.",
+  "bcl_North":"Sana makakuha ning karangkaw na iskor."
+ },
+ {
+  "id":537,
+  "orig_no":538.0,
+  "eng":"Each member must contribute to the task.",
+  "bcl_South":"Dapat magtao nin ambag an kada miyembro sa gibohon.",
+  "bcl_North":"Kada miyembro dapat mag-ambag sa gibuhon."
+ },
+ {
+  "id":543,
+  "orig_no":544.0,
+  "eng":"I washed my face in the bathroom.",
+  "bcl_South":"Naghilamos ako nin pandok ko sa banyo.",
+  "bcl_North":"Naghilamos ako ning hawong sa banyo."
+ },
+ {
+  "id":552,
+  "orig_no":553.0,
+  "eng":"Slice the pork into small square pieces.",
+  "bcl_South":"Padpadon mo an karne sa saladay na pidaso.",
+  "bcl_North":"Hiwaa yang karne sa kagdaging hiwa."
+ },
+ {
+  "id":554,
+  "orig_no":555.0,
+  "eng":"Let it boil until the meat becomes tender.",
+  "bcl_South":"Pakuluan mo hanggat sa magyuta ang karne.",
+  "bcl_North":"Pabayan mong magkulo hanggang magyuta yung karne."
+ },
+ {
+  "id":564,
+  "orig_no":565.0,
+  "eng":"I have a bad cold.",
+  "bcl_South":"Igwa akong sipon.",
+  "bcl_North":"Saray yang akong sipon."
+ },
+ {
+  "id":568,
+  "orig_no":569.0,
+  "eng":"My voice sounds so weird.",
+  "bcl_South":"Kakaiba pa tunog nin boses ko.",
+  "bcl_North":"Buhodbuhod ning boses ko."
+ },
+ {
+  "id":570,
+  "orig_no":571.0,
+  "eng":"Yours sounds worse.",
+  "bcl_South":"Mas malala saimo.",
+  "bcl_North":"Mas malala saimo."
+ },
+ {
+  "id":574,
+  "orig_no":575.0,
+  "eng":"Have you taken any medicine?",
+  "bcl_South":"Nag-inom ka na nin bulong?",
+  "bcl_North":"Nag-inom ka na burong?"
+ },
+ {
+  "id":578,
+  "orig_no":579.0,
+  "eng":"Drink plenty of water, too.",
+  "bcl_South":"Mag-inom ka nin dakol na tubig.",
+  "bcl_North":"Mag-inom ka man ning dakor na tubig."
+ },
+ {
+  "id":580,
+  "orig_no":581.0,
+  "eng":"Let's skip karaoke today.",
+  "bcl_South":"Dai muna kita makanta ngunyan nin karaoke.",
+  "bcl_North":"Ta mai nguna kita makanta ninto."
+ },
+ {
+  "id":583,
+  "orig_no":584.0,
+  "eng":"I miss my normal voice.",
+  "bcl_South":"Na miss ko na normal kong boses.",
+  "bcl_North":"Hidaw ko na sa normal kong boses."
+ },
+ {
+  "id":596,
+  "orig_no":597.0,
+  "eng":"But wait, there's an update.",
+  "bcl_South":"Pero, igwang update.",
+  "bcl_North":"Pero, ikan update."
+ },
+ {
+  "id":601,
+  "orig_no":602.0,
+  "eng":"Finally, we can rest from October 29 to 31.",
+  "bcl_South":"Sa wakas, makapahingalo naman kita puon nin October 29 to 31.",
+  "bcl_North":"Sa wakas, makapahingaro naman puno ning October 29 to 31."
+ },
+ {
+  "id":603,
+  "orig_no":604.0,
+  "eng":"Everyone's happy now.",
+  "bcl_South":"Maogma na ang gabos ngunyan.",
+  "bcl_North":"Di maugma yu gabos ninto."
+ },
+ {
+  "id":620,
+  "orig_no":621.0,
+  "eng":"Some people stay overnight at the graveside.",
+  "bcl_South":"May mga tawong magdamrag na nahuhubon sa puntod.",
+  "bcl_North":"Yu ibang taho gapahubon magdamrag sa mga pantiong."
+ },
+ {
+  "id":626,
+  "orig_no":627.0,
+  "eng":"Prices of candles and flowers increased slightly.",
+  "bcl_South":"Ang mga presyo nin kandila asin burak nagtaas.",
+  "bcl_North":"Nagmahar ning dwagi yu presyo ning kandila buda burak."
+ },
+ {
+  "id":631,
+  "orig_no":632.0,
+  "eng":"It is starting to rain, open the umbrella.",
+  "bcl_South":"Gapuon na mag-ulan, abrihi na ang payong.",
+  "bcl_North":"Gauran na, abrihi yu payong."
+ },
+ {
+  "id":633,
+  "orig_no":634.0,
+  "eng":"The wind is blowing out the candles.",
+  "bcl_South":"Napapalong ang mga kandila nin hangin.",
+  "bcl_North":"Igaparong ning hangin yang mga kandila."
+ },
+ {
+  "id":642,
+  "orig_no":643.0,
+  "eng":"It is very hot walking under the sun.",
+  "bcl_South":"Mainit maglakaw sa ilalom kan aldaw.",
+  "bcl_North":"Kaininit man mamanawan sa ilarom ning ardaw."
+ },
+ {
+  "id":646,
+  "orig_no":647.0,
+  "eng":"My feet hurt from walking too much.",
+  "bcl_South":"Ang kulog nin bitis ko sa kakalakaw.",
+  "bcl_North":"Naghapdos yu akong siki sa papanawpanaw."
+ },
+ {
+  "id":651,
+  "orig_no":652.0,
+  "eng":"Let us walk back to the main gate together.",
+  "bcl_South":"Malakaw kita papunta sa main gate.",
+  "bcl_North":"Mayna ta mabarik na kita papunta sa main gate."
+ },
+ {
+  "id":659,
+  "orig_no":660.0,
+  "eng":"Wash your feet before entering the door.",
+  "bcl_South":"Hugasan muna ang bitis bago maglaog nin purtahan.",
+  "bcl_North":"Hugasan nguna yang mga siki bago magloog sa purtahan."
+ },
+ {
+  "id":663,
+  "orig_no":664.0,
+  "eng":"Rest well tonight after a long walk.",
+  "bcl_South":"Magpahingalo nin maray ngunyan na banggi.",
+  "bcl_North":"Pahingaro ka na nintong gabi pakatapos ning harawig na pagpanaw."
+ },
+ {
+  "id":679,
+  "orig_no":681.0,
+  "eng":"My back is aching today.",
+  "bcl_South":"Makulog an sakong likod ngunyan.",
+  "bcl_North":"Gahapdos yang tinahan ko ninto."
+ },
+ {
+  "id":689,
+  "orig_no":691.0,
+  "eng":"Blow on the fire to make it burn.",
+  "bcl_South":"Hayupon mo an kalayo para maglaad.",
+  "bcl_North":"Hayupa yu karayo nganing magludab."
+ },
+ {
+  "id":695,
+  "orig_no":697.0,
+  "eng":"The pillow is filled with cotton.",
+  "bcl_South":"Puno nin gapas an ulunan.",
+  "bcl_North":"Puno ning gapas yu urunan."
+ },
+ {
+  "id":706,
+  "orig_no":708.0,
+  "eng":"The perfume is very fragrant.",
+  "bcl_South":"Mahamot an pahamot.",
+  "bcl_North":"Kahinamot man ning pahamot."
+ },
+ {
+  "id":718,
+  "orig_no":720.0,
+  "eng":"There is no food left.",
+  "bcl_South":"Dai na nin natadang pagkaon.",
+  "bcl_North":"Mai nang nabuhin na pagkaon."
+ },
+ {
+  "id":720,
+  "orig_no":722.0,
+  "eng":"They have different ideas.",
+  "bcl_South":"Igwa sindang lainlain na kaisipan.",
+  "bcl_North":"Ikan sila iba-ibang ideya."
+ },
+ {
+  "id":723,
+  "orig_no":725.0,
+  "eng":"Rattan is used to make strong baskets.",
+  "bcl_South":"Pigagamit an nawi sa paggibo nin matibay na basket.",
+  "bcl_North":"Igagamit yang rattan sa paggibo ning matibay na basket."
+ },
+ {
+  "id":729,
+  "orig_no":731.0,
+  "eng":"She knows how to sew clothes.",
+  "bcl_South":"Alam nya kung painano gatahi nin bado.",
+  "bcl_North":"Batid siya magtahi ning bado."
+ },
+ {
+  "id":751,
+  "orig_no":753.0,
+  "eng":"There are ten students in the group.",
+  "bcl_South":"Igwang sampulo na estudyante sa grupo.",
+  "bcl_North":"Ikan ning sampurong estudyante sa grupo."
+ },
+ {
+  "id":761,
+  "orig_no":763.0,
+  "eng":"Throw away the garbage properly.",
+  "bcl_South":"Sabuda an basura sa tamang sabudan.",
+  "bcl_North":"Isabod mo ning turtor yu basura."
+ },
+ {
+  "id":770,
+  "orig_no":772.0,
+  "eng":"He feels weak after his illness.",
+  "bcl_South":"Maluya an saiyang pagmati pakatapos kan saiyang helang.",
+  "bcl_North":"Nangluya siya pakatapois ning kiyang sakit."
+ },
+ {
+  "id":774,
+  "orig_no":776.0,
+  "eng":"Wipe the chair with a cloth.",
+  "bcl_South":"Pahida an tukawan gamit an bado.",
+  "bcl_North":"Punasi yu untadan ning bado."
+ },
+ {
+  "id":783,
+  "orig_no":785.0,
+  "eng":"Do you know how to speak English?",
+  "bcl_South":"Batid ka magtalam nin Ingles?",
+  "bcl_North":"Batid ka magtaram ning English?"
+ },
+ {
+  "id":794,
+  "orig_no":796.0,
+  "eng":"I will kill you.",
+  "bcl_South":"Titigbakun ta ka.",
+  "bcl_North":"Titigbakon ta ka."
+ },
+ {
+  "id":802,
+  "orig_no":804.0,
+  "eng":"Use your brain to solve the problem.",
+  "bcl_South":"Gamiton mo an saimong utak para masolusyunan an problema.",
+  "bcl_North":"Gamiton mo yu utak mo sa paresolbar ning problema."
+ },
+ {
+  "id":812,
+  "orig_no":814.0,
+  "eng":"She wants to delouse her hair.",
+  "bcl_South":"Gusto nyang mag-pahinguto sa saiyang buhok.",
+  "bcl_North":"Gusto niya magpahinguto sakiyang buhok."
+ },
+ {
+  "id":819,
+  "orig_no":821.0,
+  "eng":"We are planning a hiking trip this weekend.",
+  "bcl_South":"Nagpa-plano kami na ma hiking trip ngunyan na semana.",
+  "bcl_North":"Gaplano kami mag-hiking nintong weekend."
+ },
+ {
+  "id":821,
+  "orig_no":823.0,
+  "eng":"Do you have a map and a compass?",
+  "bcl_South":"Igwa ka bang mapa buda kompas?",
+  "bcl_North":"Ikan ka ning mapa buda kompas?"
+ },
+ {
+  "id":825,
+  "orig_no":827.0,
+  "eng":"Do not stray away from the group.",
+  "bcl_South":"Dai mag-halayo sa grupo.",
+  "bcl_North":"Ayaw pagharayo sa grupo."
+ },
+ {
+  "id":827,
+  "orig_no":829.0,
+  "eng":"Do not disturb the animals in the forest.",
+  "bcl_South":"Dai pag-istorbohon an mga hayop sa kadlagan.",
+  "bcl_North":"Ayaw pagdistorbuha yu mga hayop sa gubat."
+ },
+ {
+  "id":842,
+  "orig_no":844.0,
+  "eng":"Colorful banners and decorations hang above the streets.",
+  "bcl_South":"Makukulay na banderitas asin dekorasyon an mga nakasabit sa itaas kan kalsada.",
+  "bcl_North":"Makukulay na mga kulay buda dekorasyon yung nakasabit sa itaas ning mga kalsada."
+ },
+ {
+  "id":844,
+  "orig_no":846.0,
+  "eng":"We buy round fruits to bring good luck.",
+  "bcl_South":"Nagbakal kami nin mga bilog na prutas para magdara nin maray na swerte.",
+  "bcl_North":"Nagbakar kami ning mga bilog na prutas para magdara ning madyag na swerte."
+ },
+ {
+  "id":852,
+  "orig_no":854.0,
+  "eng":"We must respect people regardless of their background.",
+  "bcl_South":"Kaipuhan ta mag-respeto sa mga tawo maski ano man an saindang estado sa buhay.",
+  "bcl_North":"Irespeto nato yung mga taho maski ano man yu kilang estado sa buhay."
+ },
+ {
+  "id":860,
+  "orig_no":862.0,
+  "eng":"My grandmother told us wonderful stories before sleep.",
+  "bcl_South":"Nag-iistorya sa amo si lola nin mga magagayon na kwento bago magkatulog.",
+  "bcl_North":"Pigaistoryahan kami ning lola namo ning mga magagayon na istorya bago magkaturog."
+ },
+ {
+  "id":863,
+  "orig_no":865.0,
+  "eng":"We slept together on a wide woven mat.",
+  "bcl_South":"Nagkatulug kami sa dakulang banig.",
+  "bcl_North":"Nagkaturog kami sa dakurong banig."
+ },
+ {
+  "id":868,
+  "orig_no":870.0,
+  "eng":"We cried when school ended for summer break.",
+  "bcl_South":"Nag-hibi kami kan natapos na an klase para sa bakasyon.",
+  "bcl_North":"Nakakaiyak kami pag natapos na yu klase para magbakasyon."
+ },
+ {
+  "id":887,
+  "orig_no":889.0,
+  "eng":"Read customer reviews before buying expensive products online.",
+  "bcl_South":"Basahon muna an mga tinalam kan ibang parabakal bago magbakal nin mga mamahalon na produkto sa internet.",
+  "bcl_North":"Basahon nguna yang rebyu ning mga parabakar bago magbakar ning mga mamaharon na produkto online."
+ },
+ {
+  "id":900,
+  "orig_no":902.0,
+  "eng":"Many roads became impassable due to fallen debris.",
+  "bcl_South":"Dakol na dalan an dai na maagihan dahil sa mga batu na nagkahululog.",
+  "bcl_North":"Kadakor na daran yu mai naagihan dahil sa mga bato na nangagkahurog."
+ },
+ {
+  "id":915,
+  "orig_no":917.0,
+  "eng":"Open all windows on New Year's Day to welcome good fortune.",
+  "bcl_South":"Bukasan an gabus na bintana sa bagong Taon para palaogon an maray na swerte.",
+  "bcl_North":"Abrihan mo gabos na bintana pag Bagong Taon para palugon yang swerte."
+ },
+ {
+  "id":922,
+  "orig_no":924.0,
+  "eng":"Dropping a fork means a male guest is on his way.",
+  "bcl_South":"Pag nahulog an tinidor, igwang lalaking bisita na papunta na.",
+  "bcl_North":"Yang paghurog ning tinidor, ibig sabihon ikan papaabot na laraking bisita."
+ },
+ {
+  "id":923,
+  "orig_no":925.0,
+  "eng":"Eating noodles during birthdays promotes a long life.",
+  "bcl_South":"An pagkaon nin pansit sa kaaldawan gatao nin halabang buhay.",
+  "bcl_North":"Yang pagkaon ning pansit sa mga kaardawan gapaharangkaw ning buhay."
+ },
+ {
+  "id":924,
+  "orig_no":926.0,
+  "eng":"Do not sing while cooking food or you will marry an old person.",
+  "bcl_South":"Dai ka magkanta habang galuto ta tibaad maka-agom ka nin gurang.",
+  "bcl_North":"Mai magkanta habang galuto ning pagkaon ta mahan makapangasawa ka ning gurang."
+ },
+ {
+  "id":936,
+  "orig_no":938.0,
+  "eng":"Place a bible under the pillow for peaceful sleep.",
+  "bcl_South":"Magkahang nin bibliya sa ilalom kan ulunan para sa tahimik na tulug.",
+  "bcl_North":"Magbutang ka ning Bibliya sa ilarom ning imong urunan nganing magayon yang imong katurog."
+ },
+ {
+  "id":940,
+  "orig_no":942.0,
+  "eng":"A mole on the foot means you will be a traveler.",
+  "bcl_South":"Pag-igwa kang nunal sa bitis, magiging balag-balagon ka.",
+  "bcl_North":"Yang arom saimong siki, ibig sabihon parlantuag ka."
+ },
+ {
+  "id":942,
+  "orig_no":944.0,
+  "eng":"A sudden cool breeze means a spirit just passed by.",
+  "bcl_South":"An biglang mariput na hangin nagpapamati na igwang kalag na nag-agi.",
+  "bcl_North":"Yang biglang paghangin ning malipot, ibig sabihon ikan karag na nag-agi."
+ },
+ {
+  "id":943,
+  "orig_no":945.0,
+  "eng":"Seeing a shooting star lets you make a wish.",
+  "bcl_South":"Pag nakahiling ka nin nahulog na bulalakaw, pwede kang maghagad nin kagustuhan.",
+  "bcl_North":"Pag nakakita ka ning bulalakaw, magwish ka."
+ },
+ {
+  "id":955,
+  "orig_no":957.0,
+  "eng":"Wear black or white clothes when visiting the wake.",
+  "bcl_South":"Magsulot nin itom o puting bado pag gapunta sa lamay.",
+  "bcl_North":"Magsurot ka ning itom o puting bado pag gapunta sa lamay."
+ },
+ {
+  "id":957,
+  "orig_no":959.0,
+  "eng":"Do not comb your hair inside the room with the coffin.",
+  "bcl_South":"Dai ka mag-sunday kan saimong buhok sa laog kan kwarto na may kabaong.",
+  "bcl_North":"Mai ka magsukray ning imong buhok sa loog ning kwarto na ikan kabaong."
+ },
+ {
+  "id":963,
+  "orig_no":965.0,
+  "eng":"Keep the bedroom of the deceased untouched for a few weeks.",
+  "bcl_South":"Dai muna pag-hiwason an kwarto kan nagadan hanggat sa pilang semana.",
+  "bcl_North":"Mai nguna paghiwason yang kwarto ning nagdaan ning pilang semana."
+ },
+ {
+  "id":965,
+  "orig_no":967.0,
+  "eng":"Light a special candle on the fortieth day after death.",
+  "bcl_South":"Magtirik nin espesyal na kandila sa ika-kuarentang aldaw pakatapos kan pagkagadan.",
+  "bcl_North":"Magsindi ning kandila sa ika-kuwarentang diyas pagkatapos ning pagdaan."
+ },
+ {
+  "id":966,
+  "orig_no":968.0,
+  "eng":"Family members must wear a black pin on their shirts.",
+  "bcl_South":"Dapat magsulot an pamilya nin itom na pin sa saindang bado.",
+  "bcl_North":"Dapat na magsurot ning itom na pin yu pamilya sakilang bado."
+ },
+ {
+  "id":976,
+  "orig_no":978.0,
+  "eng":"Dark morning fog indicates a hot sunny afternoon ideal for drying rice.",
+  "bcl_South":"An makapal na hamog sa aga gapahiwatig nin mainit na hapon na maray sa pagbalad nin palay.",
+  "bcl_North":"Yu makapal na hamog sa aga gapahiwatig ning mainit na hapon na madyag sa pagburad ning paray."
+ },
+ {
+  "id":977,
+  "orig_no":979.0,
+  "eng":"The bolo knife is an essential tool for every local farmer.",
+  "bcl_South":"Ang tabak an salong importanteng gamit para sa kada parauma.",
+  "bcl_North":"Yang tabak sadong importanteng gamit para sa kada parauma."
+ },
+ {
+  "id":981,
+  "orig_no":983.0,
+  "eng":"I saw a tall dark figure standing at the end of the hallway.",
+  "bcl_South":"Nakahiling ako nin halangkaw asin maitom na tawo na nakatindug sa dulo kan agihan.",
+  "bcl_North":"Nakatanaw ako ning harangkaw na maitom na taho na gatindog sa murhian ning agihan."
+ },
+ {
+  "id":982,
+  "orig_no":984.0,
+  "eng":"We heard loud footsteps walking on the upper floor while nobody was upstairs.",
+  "bcl_South":"Nakadangog kami nin makusog na galakaw sa itaas na salug maski dai man nin tawo sa itaas.",
+  "bcl_North":"Nakadungog kami ning makusog na gapanaw sa itaas na sarog maski mai man ning taho sa itaas."
+ },
+ {
+  "id":992,
+  "orig_no":994.0,
+  "eng":"My hair stood on end when I heard a cold whisper right behind my ear.",
+  "bcl_South":"Nagtindug an sakong buhok kan nadangog ko an mariput na nag-hinghing sa likud kan sakong taringa.",
+  "bcl_North":"Nagtungkad yu buhok ko ninyo nakadungog ako ning gaharihari sa tinahan ning akong taringa."
+ },
+ {
+  "id":1004,
+  "orig_no":1006.0,
+  "eng":"Cover the bowl and let the meat marinate inside the refrigerator for at least thirty minutes.",
+  "bcl_South":"Takupan an yahong asin pabayaan na mababad an karne sa laog kan refrigerator nin maabot sa hanggang traynta minuto.",
+  "bcl_North":"Takpuran mo yu mangko buda pabayan na nakababad yu karne sa loog ning ref ning mga trenta minutos."
+ },
+ {
+  "id":1013,
+  "orig_no":1015.0,
+  "eng":"Extract the thick coconut cream from one freshly grated coconut.",
+  "bcl_South":"Pigaon asin kuhaon an nauha na gata hari sa bagong kudkod na tipung.",
+  "bcl_North":"Pugaon mo buda kuhaon yu natok na hari sa bagong kudkod na lobi."
+ },
+ {
+  "id":1016,
+  "orig_no":1018.0,
+  "eng":"Stir gently and continuously so the coconut milk does not curdle or separate.",
+  "bcl_South":"Haluon nin luway-luway asin dere-deretso para dai magbulag an gata.",
+  "bcl_North":"Haluon ning turtor buda kanayon nganing mai magburag yu natok."
+ },
+ {
+  "id":1020,
+  "orig_no":1022.0,
+  "eng":"Continue cooking until the sauce reduces, thickens, and coats the tender pork pieces completely.",
+  "bcl_South":"Ipagpadagos an pagluto hanggang sa mabawasan an sarsa asin maging malapot an sabaw na nakapayuta sa karne.",
+  "bcl_North":"Ipadagos yu pagluto ning sabaw hanggang sa mabawasan yung sarsa buda maging malapot yung sabaw na nakapayuta sa karnwe."
+ },
+ {
+  "id":1023,
+  "orig_no":1025.0,
+  "eng":"Pour two cups of fresh clean water into an electric kettle or small pot.",
+  "bcl_South":"I-buhos an duwang tasa kan malinig na tubig sa takuri o saday na palayok.",
+  "bcl_North":"Magbuhos ning dawhang tasang malinig na tubig sa takure."
+ },
+ {
+  "id":1024,
+  "orig_no":1026.0,
+  "eng":"Place the pot over the stove burner and heat until the water boils completely.",
+  "bcl_South":"lagayon an palayok sa ibabaw kan kalan asin painitan hanggang sa magkulo-kulo an tubig.",
+  "bcl_North":"Ibutang yu kawari sa ibabaw ning kalan saka painitan hanggang sa magkaragakaga."
+ },
+ {
+  "id":1029,
+  "orig_no":1031.0,
+  "eng":"Use a small teaspoon to stir the liquid continuously until the coffee and sugar dissolve.",
+  "bcl_South":"Maggamit nin saday na kutsara para haluon an tubig hanggang sa matunaw an kape asin asukar.",
+  "bcl_North":"Maggamit ning kadaging kutsarita para haluon yu tubig ning durdaretso hanggang sa matunaw yu kape buda asukar."
+ },
+ {
+  "id":1033,
+  "orig_no":1035.0,
+  "eng":"Sip your fresh hot coffee slowly and enjoy your morning.",
+  "bcl_South":"Inumon an saimong bagong mainit na kape nin luway-luway asin mag-enjoy sa saimong aga.",
+  "bcl_North":"Inumon yu kape ning huway sana buda lasapon yu imong aga."
+ },
+ {
+  "id":1035,
+  "orig_no":1037.0,
+  "eng":"Apply soap and rub your hands together.",
+  "bcl_South":"Magkahang nin sabon asin kiskison an saimong mga kamut nin sabay.",
+  "bcl_North":"Magbutang ka ning sabon saka mo kiskison yu imong mga kamot."
+ },
+ {
+  "id":1036,
+  "orig_no":1038.0,
+  "eng":"Scrub the backs of your hands and between your fingers.",
+  "bcl_South":"Kiskison an likud kan saimong mga kamut asin an tahaw kan saimong mga gulamuy.",
+  "bcl_North":"Hapurason mo yu tinahan ning imong mga kamot buda yu mga pag-urtanan ning imong mga turdo."
+ },
+ {
+  "id":1037,
+  "orig_no":1039.0,
+  "eng":"Rinse your hands well under clean water.",
+  "bcl_South":"Banlawan nin maray an saimong mga kamut sa ilalom kan malinig na tubig.",
+  "bcl_North":"Banlawahan mo ning turtor yu imong mga kamot ning malinig na tubig."
+ },
+ {
+  "id":1048,
+  "orig_no":1050.0,
+  "eng":"The owner rides his horse across the green valley.",
+  "bcl_South":"Ang may-ari gasakay sa saiyang kabayo sa kapatagan.",
+  "bcl_North":"Yu kagsadili gasakay sakiyang kabayo sa kapatagan."
+ },
+ {
+  "id":1055,
+  "orig_no":1057.0,
+  "eng":"Termites can severely damage a house.",
+  "bcl_South":"An anay nakauyag nin halong.",
+  "bcl_North":"Nakauyag ning grabi yang mga anay sa baray."
+ },
+ {
+  "id":1061,
+  "orig_no":1063.0,
+  "eng":"The stink bug smells bad when when it lands on you.",
+  "bcl_South":"Mabata an hangop nin garimaso kapag natugpo saimo.",
+  "bcl_North":"Maharo yang hangop ning kurisap pag nagtugpo saimo."
+ },
+ {
+  "id":1080,
+  "orig_no":1082.0,
+  "eng":"My fingers feel stiff.",
+  "bcl_South":"Nanu-og an sakong mga galamay.",
+  "bcl_North":"Nanugas yu akong mga turdo."
+ },
+ {
+  "id":1105,
+  "orig_no":1107.0,
+  "eng":"We picked a guava.",
+  "bcl_South":"Nagpitas kami nin bayawas.",
+  "bcl_North":"Nagputi kami ning bayawas."
+ },
+ {
+  "id":1108,
+  "orig_no":1110.0,
+  "eng":"Cut the long green string beans into small pieces.",
+  "bcl_South":"Putulon an halabang sitaw sa saladay na pidaso.",
+  "bcl_North":"Utdon mo yu baratong sa kagdagi sanang pidaso."
+ },
+ {
+  "id":1125,
+  "orig_no":1127.0,
+  "eng":"His stomach hurts.",
+  "bcl_South":"Makulog an sainyang tulak.",
+  "bcl_North":"Naghapdos yu bituka niya."
+ },
+ {
+  "id":1126,
+  "orig_no":1128.0,
+  "eng":"He scraped his knee.",
+  "bcl_South":"Nalugadan an sainyang tuhod.",
+  "bcl_North":"Naninahan niya yu kiyang tuhod."
+ },
+ {
+  "id":1128,
+  "orig_no":1130.0,
+  "eng":"Cook the pork liver.",
+  "bcl_South":"Lutoon mo an atay kan urig.",
+  "bcl_North":"Lutuon yu atay ning orig."
+ },
+ {
+  "id":1132,
+  "orig_no":1134.0,
+  "eng":"She has a fever.",
+  "bcl_South":"Igwa sya nin kalintura.",
+  "bcl_North":"Ikan siya ning kalintura."
+ },
+ {
+  "id":1142,
+  "orig_no":1144.0,
+  "eng":"Get rid of your dry dandruff.",
+  "bcl_South":"Harion mo an saimong kaspa.",
+  "bcl_North":"Harion mo yu imong kurisap."
+ },
+ {
+  "id":1143,
+  "orig_no":1145.0,
+  "eng":"I see the baby's belly button.",
+  "bcl_South":"Nahiling ko an pusod nin aki.",
+  "bcl_North":"Nakita ko yu pusod ning bata."
+ },
+ {
+  "id":1147,
+  "orig_no":1149.0,
+  "eng":"She is so flirty.",
+  "bcl_South":"Kadinurat nya.",
+  "bcl_North":"Kaginitil man niya."
+ },
+ {
+  "id":1152,
+  "orig_no":1154.0,
+  "eng":"The referee whistled.",
+  "bcl_South":"Nagsiwik an referee.",
+  "bcl_North":"Nagpito yu referee."
+ },
+ {
+  "id":1155,
+  "orig_no":1157.0,
+  "eng":"She is a crazy woman.",
+  "bcl_South":"Ulayog syang babayi.",
+  "bcl_North":"Tagi siyang babayi."
+ },
+ {
+  "id":1156,
+  "orig_no":1158.0,
+  "eng":"Did you push me?",
+  "bcl_South":"Tinulak mo ako?",
+  "bcl_North":"Tinulak mo ako?"
+ },
+ {
+  "id":1161,
+  "orig_no":1163.0,
+  "eng":"My grandfather snores loudly.",
+  "bcl_South":"Ang lolo ko ga-hagong nin makusog.",
+  "bcl_North":"Gahuragok ning makusog yung lolo ko."
+ },
+ {
+  "id":1172,
+  "orig_no":1174.0,
+  "eng":"Wrap the food.",
+  "bcl_South":"Patuson an mga pagkaon.",
+  "bcl_North":"Putuson mo yu pagkaon."
+ },
+ {
+  "id":1186,
+  "orig_no":1188.0,
+  "eng":"They sell banana fritters.",
+  "bcl_South":"Gapabakal sinda nin baduya.",
+  "bcl_North":"Gapabakar sila ning badhuya."
+ },
+ {
+  "id":1187,
+  "orig_no":1189.0,
+  "eng":"I only see them sometimes now.",
+  "bcl_South":"Bihira ko na sana sinda nahiling ngunyan.",
+  "bcl_North":"Bihira ko sana silang makita ninto."
+ },
+ {
+  "id":1188,
+  "orig_no":1190.0,
+  "eng":"She is sad.",
+  "bcl_South":"Namundo sya.",
+  "bcl_North":"Namundo siya."
+ },
+ {
+  "id":1196,
+  "orig_no":1198.0,
+  "eng":"I have apthous on my mouth.",
+  "bcl_South":"Igwa ako nin panungaw sa sakong sihong.",
+  "bcl_North":"Ikan ako panungaw saakong kimot."
+ },
+ {
+  "id":1204,
+  "orig_no":1206.0,
+  "eng":"He's grubby.",
+  "bcl_South":"Mus-ingon sya.",
+  "bcl_North":"Musingon siya."
+ },
+ {
+  "id":1213,
+  "orig_no":1215.0,
+  "eng":"Why do you prefer buying them in stores?",
+  "bcl_South":"Ngata ta gusto mo magbakal sa mga tindahan?",
+  "bcl_North":"Tayon ta mas gusto mo magbakar sa mga tindahan?"
+ },
+ {
+  "id":1241,
+  "orig_no":1243.0,
+  "eng":"You're a pervert.",
+  "bcl_South":"Usmak ka.",
+  "bcl_North":"Bagra ka."
+ },
+ {
+  "id":1242,
+  "orig_no":1244.0,
+  "eng":"There is a nest in the tree.",
+  "bcl_South":"Igwang salag sa puno.",
+  "bcl_North":"Ikan ning sarag sa puno."
+ },
+ {
+  "id":1246,
+  "orig_no":1248.0,
+  "eng":"My favorite dried fish is small dried anchovies.",
+  "bcl_South":"Ang paborito kong dugang na sila ay dilis.",
+  "bcl_North":"Dilis yu paborito kong dugang na isda."
+ },
+ {
+  "id":1250,
+  "orig_no":1252.0,
+  "eng":"Yes, I really enjoy it.",
+  "bcl_South":"Iyo, gustong-gusto ko.",
+  "bcl_North":"Oho, gustong-gusto ko."
+ },
+ {
+  "id":1254,
+  "orig_no":1256.0,
+  "eng":"I water them every morning.",
+  "bcl_South":"Pigabaribhi ko sinda kada aga.",
+  "bcl_North":"Igabaribhi ko sila kada aga."
+ },
+ {
+  "id":1256,
+  "orig_no":1258.0,
+  "eng":"Yes, especially during summer.",
+  "bcl_South":"Iyo, Lalo na kung summer.",
+  "bcl_North":"Oho, lalo kung summer."
+ },
+ {
+  "id":1261,
+  "orig_no":1263.0,
+  "eng":"Do you water them everyday?",
+  "bcl_South":"Pigabaribhihan mo sinda ulu-aldaw?",
+  "bcl_North":"Igabaribhi mo sila urardaw?"
+ },
+ {
+  "id":1266,
+  "orig_no":1268.0,
+  "eng":"I have about ten plants.",
+  "bcl_South":"Mga asa sampulo na masitas.",
+  "bcl_North":"Mga asa sampurong masitas."
+ },
+ {
+  "id":1274,
+  "orig_no":1276.0,
+  "eng":"Yes, they just need proper care.",
+  "bcl_South":"Iyo, kaipuhan lang ninda pag-atinderan.",
+  "bcl_North":"Oho, kaipuhan lang ning turtor na pag-alaga."
+ },
+ {
+  "id":1275,
+  "orig_no":1277.0,
+  "eng":"When do you harvest them?",
+  "bcl_South":"Saarin mo sinda aanihon?",
+  "bcl_North":"Sano mo sila pigaani?"
+ },
+ {
+  "id":1278,
+  "orig_no":1280.0,
+  "eng":"Of course, you can.",
+  "bcl_South":"Iyo taano, pwede.",
+  "bcl_North":"Una iso, pwede."
+ },
+ {
+  "id":1281,
+  "orig_no":1283.0,
+  "eng":"Do you also have gardening gloves?",
+  "bcl_South":"Igwa ka man nin mga gwantes na pangtanom?",
+  "bcl_North":"Ikan ka man ning mga gwantes na pangtinaman?"
+ },
+ {
+  "id":1292,
+  "orig_no":1294.0,
+  "eng":"Because it has a beautiful color.",
+  "bcl_South":"Ta pano igwa sya nin magayon na kulay.",
+  "bcl_North":"Panong magayon yu kiyang kulay."
+ },
+ {
+  "id":1298,
+  "orig_no":1300.0,
+  "eng":"You should try planting one.",
+  "bcl_South":"Testingon mo man mag tanom nin salo.",
+  "bcl_North":"Testingan mo magtinaman ning sado."
+ },
+ {
+  "id":1309,
+  "orig_no":1311.0,
+  "eng":"Where did you buy those seeds?",
+  "bcl_South":"Sain mo binakal yang mga pisog?",
+  "bcl_North":"Siin mo binakar yun na mga pisog?"
+ },
+ {
+  "id":1310,
+  "orig_no":1312.0,
+  "eng":"I bought them at a garden shop.",
+  "bcl_South":"Binakal ko sinda sa bakalan nin mga tinanom.",
+  "bcl_North":"Binakar ko sila sa bakaran ning mga tinaman."
+ },
+ {
+  "id":1314,
+  "orig_no":1316.0,
+  "eng":"They were quite affordable.",
+  "bcl_South":"Barato man sana.",
+  "bcl_North":"Barato man sana."
+ },
+ {
+  "id":1316,
+  "orig_no":1318.0,
+  "eng":"I will plant them tomorrow.",
+  "bcl_South":"Tatamunom ko sinda saaga.",
+  "bcl_North":"Itinaman ko sila saaga."
+ },
+ {
+  "id":1337,
+  "orig_no":1339.0,
+  "eng":"It depends on the materials.",
+  "bcl_South":"Depdende sa mga matryales na gamit.",
+  "bcl_North":"Depende sa mga materyales."
+ },
+ {
+  "id":1340,
+  "orig_no":1342.0,
+  "eng":"I can teach you.",
+  "bcl_South":"Pwede takang tutulan.",
+  "bcl_North":"Pwede ta kang hunuhan."
+ },
+ {
+  "id":1342,
+  "orig_no":1344.0,
+  "eng":"I take care of it myself.",
+  "bcl_South":"Ako mismo ang gaalaga.",
+  "bcl_North":"Ako mismo yu gaalaga."
+ },
+ {
+  "id":1343,
+  "orig_no":1345.0,
+  "eng":"How often do you maintain it?",
+  "bcl_South":"Inano kadalas mong pigaalagaan?",
+  "bcl_North":"Inano kadalas mong pigaalagaan?"
+ },
+ {
+  "id":1352,
+  "orig_no":1354.0,
+  "eng":"Have you ever planted a tree?",
+  "bcl_South":"Nagtanom ka na ba nin puno?",
+  "bcl_North":"Nagtinaman ka naman ning puno?"
+ },
+ {
+  "id":1354,
+  "orig_no":1356.0,
+  "eng":"You are very lazy.",
+  "bcl_South":"Kabinulad mo.",
+  "bcl_North":"Kabinurad mo man."
+ },
+ {
+  "id":1364,
+  "orig_no":1366.0,
+  "eng":"I hope so too.",
+  "bcl_South":"Sana ngani.",
+  "bcl_North":"Iso ngani."
+ },
+ {
+  "id":1368,
+  "orig_no":1370.0,
+  "eng":"My mother taught me when I was young.",
+  "bcl_South":"Tinutulan ako nin sakong ina kang aki pa ako.",
+  "bcl_North":"Ighunuhan ako ning akong ina ninyo kadagi pa ako."
+ },
+ {
+  "id":1383,
+  "orig_no":1385.0,
+  "eng":"That is good plant care.",
+  "bcl_South":"Magayon na ataman yan sa tinanom.",
+  "bcl_North":"Magayon na pag-alaga yan sa tinaman."
+ },
+ {
+  "id":1387,
+  "orig_no":1389.0,
+  "eng":"I designed it myself.",
+  "bcl_South":"Ako mismo ang nag disenyo.",
+  "bcl_North":"Ako mismo yu nagbisti."
+ },
+ {
+  "id":1388,
+  "orig_no":1390.0,
+  "eng":"Why did you choose that design?",
+  "bcl_South":"Ngata ta pinili mo an alog kaan na disenyo?",
+  "bcl_North":"Tayon ta pinili mo yan na bisti?"
+ },
+ {
+  "id":1391,
+  "orig_no":1393.0,
+  "eng":"I like green, pink, and yellow.",
+  "bcl_South":"Gusto ko nin berde, rosas, buda dilaw.",
+  "bcl_North":"Gusto ko ning berde, rosas, buda dilaw."
+ },
+ {
+  "id":1399,
+  "orig_no":1401.0,
+  "eng":"I think I watered them too much.",
+  "bcl_South":"Sa hiling ko nanganaan ako nin paglagay nin pagbaribhi.",
+  "bcl_North":"Baga nasobrahan ko ning baribhi."
+ },
+ {
+  "id":1402,
+  "orig_no":1404.0,
+  "eng":"Do you check your plants regularly?",
+  "bcl_South":"pigahiling mo man ang saimong mga tinanom pirmi?",
+  "bcl_North":"Igakita mo man yu imong mga tinaman pirmi?"
+ },
+ {
+  "id":1407,
+  "orig_no":1409.0,
+  "eng":"I hope they recover soon.",
+  "bcl_South":"Sana maka-balik sana sinda deretso sa dati.",
+  "bcl_North":"Dapat magbarik sana sila turos sa dati."
+ },
+ {
+  "id":1422,
+  "orig_no":1424.0,
+  "eng":"Why are you gardening so early?",
+  "bcl_South":"Ngata ta pagkainagap mong magtanom?",
+  "bcl_North":"Tayon ta gatinaman ka ning pagkainagap?"
+ },
+ {
+  "id":1424,
+  "orig_no":1426.0,
+  "eng":"Is it better than gardening in the afternoon?",
+  "bcl_South":"Mas magayon ba kaysa sa magtanon nin hapon?",
+  "bcl_North":"Mas magayon ba kaysa magtinaman ning hapon?"
+ },
+ {
+  "id":1425,
+  "orig_no":1427.0,
+  "eng":"Yes, because the weather is cooler.",
+  "bcl_South":"Iyo, ta pano maripot ang panahon.",
+  "bcl_North":"Oho, ta mas malipot yu panahon."
+ },
+ {
+  "id":1426,
+  "orig_no":1428.0,
+  "eng":"What do you usually do first?",
+  "bcl_South":"Ano nguna ang mga yagibo mong inot?",
+  "bcl_North":"Ano yu kanayin mong pigagibo?"
+ },
+ {
+  "id":1430,
+  "orig_no":1432.0,
+  "eng":"Morning gardening sounds peaceful.",
+  "bcl_South":"Baga trangkilo yang pagtanom nin aga.",
+  "bcl_North":"Baga trangkilo yang pagtinaman ning aga."
+ },
+ {
+  "id":1434,
+  "orig_no":1436.0,
+  "eng":"Do you use chemical fertilizers?",
+  "bcl_South":"Gagamit ka nin kemikal na abono?",
+  "bcl_North":"Gagamit ka ning kemikal na abono?"
+ },
+ {
+  "id":1438,
+  "orig_no":1440.0,
+  "eng":"Do you grow your own food?",
+  "bcl_South":"Gapadakula ka man nin sadili mong pagkaon?",
+  "bcl_North":"Gapatarubo ka man ning sadili mong pagkaon?"
+ },
+ {
+  "id":1445,
+  "orig_no":1447.0,
+  "eng":"Who usually helps you?",
+  "bcl_South":"Sisay pirmi ang gatuwang saimo?",
+  "bcl_North":"Sino yu kanayon na gatabang saimo?"
+ },
+ {
+  "id":1451,
+  "orig_no":1453.0,
+  "eng":"That sounds like a fun activity.",
+  "bcl_South":"Baging maogma gibuhon yan.",
+  "bcl_North":"Baga magayon gibuhon yan."
+ },
+ {
+  "id":1467,
+  "orig_no":1469.0,
+  "eng":"Where do you want to go?",
+  "bcl_South":"Sain mo gusto magpunta?",
+  "bcl_North":"Siin mo gusto magpunta?"
+ },
+ {
+  "id":1480,
+  "orig_no":1482.0,
+  "eng":"Yes, they are inside my bag.",
+  "bcl_South":"Iyo, nasa laog nin bag ko.",
+  "bcl_North":"Oho, asa loog ning bag ko."
+ },
+ {
+  "id":1481,
+  "orig_no":1483.0,
+  "eng":"The water looks so refreshing.",
+  "bcl_South":"Baging kaprinesko ning tubig.",
+  "bcl_North":"Kaprinesko ning tubig."
+ },
+ {
+  "id":1491,
+  "orig_no":1493.0,
+  "eng":"Do we need extra water?",
+  "bcl_South":"Kaipuhan ta pa ba magdagdag nin tubig?",
+  "bcl_North":"Kaipuhan pa ba nato ning dagdag na tubig?"
+ },
+ {
+  "id":1512,
+  "orig_no":1514.0,
+  "eng":"Yes, we took many pictures.",
+  "bcl_South":"Iyo, nagkuha kami nin dakol na mga litrato.",
+  "bcl_North":"Oho, nagkuha kami ning kadakor na litrato."
+ },
+ {
+  "id":1523,
+  "orig_no":1525.0,
+  "eng":"What is your favorite song?",
+  "bcl_South":"Ano ang paborito mong kanta?",
+  "bcl_North":"Ano yu paborito mong kanta?"
+ },
+ {
+  "id":1527,
+  "orig_no":1529.0,
+  "eng":"Same, her songs are so relatable.",
+  "bcl_South":"Parehas kita, nakarelate ang kanta nya.",
+  "bcl_North":"Parehas kita, nakarelate ang kanta niya."
+ },
+ {
+  "id":1534,
+  "orig_no":1536.0,
+  "eng":"Sure, you might like it.",
+  "bcl_South":"Sige, magugustuhan mo an.",
+  "bcl_North":"Iso, magustuhan mo yan."
+ },
+ {
+  "id":1537,
+  "orig_no":1539.0,
+  "eng":"Your music taste is really good.",
+  "bcl_South":"Magayon an saimong mga napiling kanta.",
+  "bcl_North":"Magayon ang saimong mga napiling kanta."
+ },
+ {
+  "id":1542,
+  "orig_no":1544.0,
+  "eng":"No, I just enjoy emotional music.",
+  "bcl_South":"Bako, naugma lang ako sa mga ma emosyonal na kanta.",
+  "bcl_North":"Buko, naugma lang ako sa emosyonal na kanta."
+ },
+ {
+  "id":1544,
+  "orig_no":1546.0,
+  "eng":"Sometimes, especially at night.",
+  "bcl_South":"Minsan, lalo na kapag banggi.",
+  "bcl_North":"Minsan, lalo na pag gabi."
+ },
+ {
+  "id":1557,
+  "orig_no":1559.0,
+  "eng":"You should listen to it later.",
+  "bcl_South":"Dangugon mo ito aban-aban.",
+  "bcl_North":"Dunggon mo aban-aban."
+ },
+ {
+  "id":1562,
+  "orig_no":1564.0,
+  "eng":"What do you listen to when you are happy?",
+  "bcl_South":"Anong pigadangog mo kapag maogma ka?",
+  "bcl_North":"Ano yu mga igahimati mo pag maugma ka?"
+ },
+ {
+  "id":1567,
+  "orig_no":1569.0,
+  "eng":"True, it makes everything feel better.",
+  "bcl_South":"Totoo, pigapagian nya gabos.",
+  "bcl_North":"Husto, igapagaan nya gabos."
+ }
+]
