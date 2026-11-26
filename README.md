@@ -184,4 +184,3 @@ Export it with `python scripts/export_feedback.py`.
 | Page says “Model failed to load” | Read the error in the terminal. Usually `models/lora_adapter` is missing or incomplete |
 | Translation is slow | Set `BIKOLE_NUM_BEAMS=1` in `.env`; use a GPU if you have one (CUDA build of PyTorch from pytorch.org) |
 | Port 8000 already in use | `uvicorn backend.main:app --reload --port 8001` |
-
