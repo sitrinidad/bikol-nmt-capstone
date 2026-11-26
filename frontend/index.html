@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bikolé — English, Virac & Pandan Translator</title>
+  <meta name="description" content="Bikolé translates between English, Virac (Southern Bikol) and Pandan (Northern Bikol) with a fine-tuned neural translation model." />
+  <meta property="og:title" content="Bikolé — Different Words. Same Understanding." />
+  <meta property="og:description" content="Translate between English, Virac (Southern Bikol) and Pandan (Northern Bikol)." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>try { if (localStorage.getItem("bikole-theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}</script>
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Skip to translator</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <nav class="container navbar__inner" aria-label="Main">
+      <a class="brand" href="#home" aria-label="Bikolé home">
+        <img class="brand__logo" src="assets/logo.png" alt="" width="36" height="36" />
+        <span class="brand__name">Bikolé</span>
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a class="nav-link" href="#home"><i data-lucide="house"></i><span>Home</span></a></li>
+          <li><a class="nav-link" href="#history"><i data-lucide="history"></i><span>History</span></a></li>
+          <li><a class="nav-link" href="#about"><i data-lucide="info"></i><span>About</span></a></li>
+        </ul>
+        <button id="theme-toggle" class="btn btn--icon btn--theme" type="button" aria-pressed="false" aria-label="Switch to dark mode" title="Switch to dark mode">
+          <i data-lucide="moon"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <!-- ============ HERO ============ -->
+    <section class="hero container" aria-labelledby="hero-title">
+      <p class="eyebrow reveal"><i data-lucide="languages"></i> English · Virac · Pandan</p>
+      <h1 id="hero-title" class="hero__title reveal">
+        Different Words.<br /><span class="hero__accent">Same Understanding.</span>
+        <i data-lucide="sparkle" class="hero__sparkle" aria-hidden="true"></i>
+      </h1>
+      <p class="hero__tagline reveal">“Naligis Here, Nagilis There—Bikolé Gets You Everywhere!”</p>
+      <p class="hero__desc reveal">Translate between English and the two Catanduanes Bikol variants with a neural model fine-tuned on local sentences.</p>
+    </section>
+
+    <!-- ============ TRANSLATION WORKSPACE ============ -->
+    <section id="workspace" class="container workspace reveal" aria-label="Translation workspace">
+      <div class="panels">
+        <article class="panel">
+          <header class="panel__head">
+            <h2 class="panel__title"><i data-lucide="pencil"></i> Source Text</h2>
+            <label class="sr-only" for="source-lang">Source language</label>
+            <div class="select-wrap">
+              <select id="source-lang" class="select"></select>
+              <i data-lucide="chevron-down" class="select-wrap__icon" aria-hidden="true"></i>
+            </div>
+          </header>
+          <label class="sr-only" for="source-text">Text to translate</label>
+          <textarea id="source-text" class="panel__body textarea" maxlength="1000" placeholder="Type or paste text to translate…"></textarea>
+          <footer class="panel__foot">
+            <span id="char-count" class="counter" aria-live="polite">0 / 1000</span>
+            <button id="clear-btn" class="btn btn--ghost" type="button"><i data-lucide="trash-2"></i><span>Clear</span></button>
+          </footer>
+        </article>
+
+        <div class="swap">
+          <button id="swap-btn" class="btn btn--icon" type="button" aria-label="Swap languages" title="Swap languages">
+            <i data-lucide="arrow-left-right"></i>
+          </button>
+        </div>
+
+        <article class="panel panel--output">
+          <header class="panel__head">
+            <h2 class="panel__title"><i data-lucide="languages"></i> Translated Text</h2>
+            <label class="sr-only" for="target-lang">Target language</label>
+            <div class="select-wrap">
+              <select id="target-lang" class="select"></select>
+              <i data-lucide="chevron-down" class="select-wrap__icon" aria-hidden="true"></i>
+            </div>
+          </header>
+          <div id="target-text" class="panel__body output is-empty" role="textbox" aria-readonly="true" aria-live="polite" aria-label="Translated text">Your translation will appear here.</div>
+          <footer class="panel__foot">
+            <span id="direction-note" class="counter"></span>
+            <button id="copy-btn" class="btn btn--ghost" type="button" disabled><i data-lucide="copy"></i><span>Copy</span></button>
+          </footer>
+        </article>
+      </div>
+
+      <div class="translate-row">
+        <button id="translate-btn" class="btn btn--primary" type="button" disabled>
+          <span class="btn__icon"><i data-lucide="sparkles"></i></span>
+          <span class="btn__label">Translate</span>
+        </button>
+        <p id="model-state" class="model-state" aria-live="polite"><span class="dot"></span><span class="model-state__text">Connecting to the translation service…</span></p>
+      </div>
+    </section>
+
+    <!-- ============ PERFORMANCE CARDS ============ -->
+    <section class="container cards reveal" aria-label="Translation performance">
+      <article class="card">
+        <span class="card__icon"><i data-lucide="chart-no-axes-column-increasing"></i></span>
+        <div>
+          <h3 class="card__label">Confidence Score</h3>
+          <p id="confidence-value" class="card__value">—</p>
+          <div class="meter" aria-hidden="true"><span id="confidence-bar" class="meter__fill"></span></div>
+          <p class="card__hint">Average token probability from the model</p>
+        </div>
+      </article>
+      <article class="card">
+        <span class="card__icon"><i data-lucide="timer"></i></span>
+        <div>
+          <h3 class="card__label">Inference Latency</h3>
+          <p id="latency-value" class="card__value">—</p>
+          <p class="card__hint">Measured model time for this request</p>
+        </div>
+      </article>
+      <article class="card">
+        <span class="card__icon"><i data-lucide="circle-check"></i></span>
+        <div>
+          <h3 class="card__label">Translation Status</h3>
+          <p class="card__value"><span id="status-badge" class="badge badge--idle">Waiting</span></p>
+          <p id="status-hint" class="card__hint">Translate something to begin</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ============ HISTORY ============ -->
+    <section id="history" class="container history reveal" aria-labelledby="history-title">
+      <header class="history__head">
+        <div>
+          <h2 id="history-title" class="section-title"><i data-lucide="history"></i> Translation History</h2>
+          <p class="muted">Your recent translations, saved in this browser only.</p>
+        </div>
+        <button id="clear-history" class="btn btn--ghost" type="button" disabled><i data-lucide="trash-2"></i><span>Clear history</span></button>
+      </header>
+      <p id="history-empty" class="history__empty">No translations yet. They will show up here so you can reuse them.</p>
+      <ol id="history-list" class="history__list"></ol>
+    </section>
+
+    <!-- ============ FEEDBACK ============ -->
+    <section class="container feedback reveal" aria-labelledby="feedback-title">
+      <div>
+        <h2 id="feedback-title" class="section-title">Spotted a mistake?</h2>
+        <p class="muted">Your correction is saved and used to improve the next version of the model.</p>
+      </div>
+      <button id="open-feedback" class="btn btn--outline" type="button"><i data-lucide="message-square-warning"></i><span>Report Inaccurate Translation</span></button>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="container about reveal" aria-labelledby="about-title">
+      <div class="about__intro">
+        <h2 id="about-title" class="section-title">About Bikolé</h2>
+        <p class="muted">Bikolé helps people in and from Catanduanes understand each other across language lines. Everyday translators struggle with local Bikol words and grammar, so Bikolé uses Meta’s NLLB-200 (600M) model, fine-tuned with LoRA on about 1,500 sentences written in English, Virac and Pandan.</p>
+      </div>
+      <ul class="lang-grid">
+        <li class="lang-card">
+          <span class="lang-card__tag">eng</span>
+          <h3 class="lang-card__name">English</h3>
+          <p class="lang-card__desc">Used in school, work and official communication.</p>
+          <p class="lang-card__example">“Look at this.”</p>
+        </li>
+        <li class="lang-card">
+          <span class="lang-card__tag">bcl_South</span>
+          <h3 class="lang-card__name">Virac <span>Southern Bikol</span></h3>
+          <p class="lang-card__desc">Spoken in Virac and southern Catanduanes.</p>
+          <p class="lang-card__example">“Hilingon mo ini.”</p>
+        </li>
+        <li class="lang-card">
+          <span class="lang-card__tag">bcl_North</span>
+          <h3 class="lang-card__name">Pandan <span>Northern Bikol</span></h3>
+          <p class="lang-card__desc">Spoken in Pandan and northern Catanduanes.</p>
+          <p class="lang-card__example">“Kitaa daw to.”</p>
+        </li>
+      </ul>
+      <p class="about__directions"><i data-lucide="arrow-left-right"></i> English ↔ Virac · English ↔ Pandan · Virac ↔ Pandan</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <span class="brand brand--small"><img class="brand__logo" src="assets/logo.png" alt="" width="24" height="24" /><span class="brand__name">Bikolé</span></span>
+      <span class="muted">Naligis Here, Nagilis There—Bikolé Gets You Everywhere!</span>
+    </div>
+  </footer>
+
+  <!-- ============ FEEDBACK DIALOG ============ -->
+  <dialog id="feedback-dialog" class="dialog" aria-labelledby="dialog-title">
+    <form id="feedback-form" class="dialog__form" novalidate>
+      <header class="dialog__head">
+        <h2 id="dialog-title" class="section-title"><i data-lucide="message-square-warning"></i> Report Inaccurate Translation</h2>
+        <button class="btn btn--icon btn--plain" type="button" data-close aria-label="Close"><i data-lucide="x"></i></button>
+      </header>
+
+      <div class="field">
+        <label for="fb-source-text">Source text</label>
+        <textarea id="fb-source-text" name="source_text" rows="2" maxlength="1000" required></textarea>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="fb-source-lang">Source language</label>
+          <select id="fb-source-lang" name="source_lang" class="select select--field" required></select>
+        </div>
+        <div class="field">
+          <label for="fb-target-lang">Target language</label>
+          <select id="fb-target-lang" name="target_lang" class="select select--field" required></select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="fb-generated">Generated translation</label>
+        <textarea id="fb-generated" name="generated_translation" rows="2" maxlength="2000" required></textarea>
+      </div>
+      <div class="field">
+        <label for="fb-corrected">Corrected translation</label>
+        <textarea id="fb-corrected" name="corrected_translation" rows="2" maxlength="2000" required placeholder="How should it read?"></textarea>
+      </div>
+      <div class="field">
+        <label for="fb-explanation">Explanation <span class="optional">(optional)</span></label>
+        <textarea id="fb-explanation" name="explanation" rows="2" maxlength="1000" placeholder="What was wrong?"></textarea>
+      </div>
+
+      <p id="fb-message" class="alert" role="status" hidden></p>
+
+      <footer class="dialog__foot">
+        <button class="btn btn--ghost" type="button" data-close>Cancel</button>
+        <button id="fb-submit" class="btn btn--primary btn--sm" type="submit"><span class="btn__icon"><i data-lucide="send"></i></span><span class="btn__label">Submit feedback</span></button>
+      </footer>
+    </form>
+  </dialog>
+
+  <!-- ============ NOTIFICATIONS ============ -->
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+
+  <script src="vendor/lucide.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
