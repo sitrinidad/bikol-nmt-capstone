@@ -1,0 +1,801 @@
+variant,mode,src_tokens,bucket,out_tokens,ms
+B: merged fp32 + AMP (API default),greedy,12,11–14,13,397.30584199992336
+B: merged fp32 + AMP (API default),greedy,6,≤6,10,282.7072469999621
+B: merged fp32 + AMP (API default),greedy,6,≤6,8,217.24000700010038
+B: merged fp32 + AMP (API default),greedy,20,15–20,22,592.1605070000169
+B: merged fp32 + AMP (API default),greedy,16,15–20,16,467.94119600008344
+B: merged fp32 + AMP (API default),greedy,12,11–14,14,399.56651500006046
+B: merged fp32 + AMP (API default),greedy,10,7–10,14,424.73638100000244
+B: merged fp32 + AMP (API default),greedy,21,>20,25,579.3100230000618
+B: merged fp32 + AMP (API default),greedy,24,>20,29,685.1311390000774
+B: merged fp32 + AMP (API default),greedy,10,7–10,14,330.1636559999679
+B: merged fp32 + AMP (API default),greedy,9,7–10,9,202.9572169999483
+B: merged fp32 + AMP (API default),greedy,22,>20,15,354.38197799999216
+B: merged fp32 + AMP (API default),greedy,26,>20,20,453.2038279999142
+B: merged fp32 + AMP (API default),greedy,8,7–10,16,363.60624600001756
+B: merged fp32 + AMP (API default),greedy,22,>20,34,786.7889450001258
+B: merged fp32 + AMP (API default),greedy,24,>20,26,609.2510410001069
+B: merged fp32 + AMP (API default),greedy,7,7–10,11,247.80991300008282
+B: merged fp32 + AMP (API default),greedy,19,15–20,19,435.92936699997153
+B: merged fp32 + AMP (API default),greedy,12,11–14,12,282.12919600014175
+B: merged fp32 + AMP (API default),greedy,8,7–10,13,293.1253879999076
+B: merged fp32 + AMP (API default),greedy,16,15–20,19,438.98093000007066
+B: merged fp32 + AMP (API default),greedy,6,≤6,13,306.94127299989304
+B: merged fp32 + AMP (API default),greedy,20,15–20,19,431.36301799995636
+B: merged fp32 + AMP (API default),greedy,12,11–14,10,225.30421900000874
+B: merged fp32 + AMP (API default),greedy,8,7–10,11,261.1602380000022
+B: merged fp32 + AMP (API default),greedy,8,7–10,13,290.33156100013
+B: merged fp32 + AMP (API default),greedy,13,11–14,21,484.2025919999742
+B: merged fp32 + AMP (API default),greedy,9,7–10,22,516.0214590000578
+B: merged fp32 + AMP (API default),greedy,18,15–20,16,364.8273450000943
+B: merged fp32 + AMP (API default),greedy,15,15–20,20,471.57790200003546
+B: merged fp32 + AMP (API default),greedy,5,≤6,9,201.30440799994176
+B: merged fp32 + AMP (API default),greedy,6,≤6,9,203.94222599998102
+B: merged fp32 + AMP (API default),greedy,7,7–10,10,325.78604399986943
+B: merged fp32 + AMP (API default),greedy,7,7–10,11,309.6557739997934
+B: merged fp32 + AMP (API default),greedy,15,15–20,23,625.949035000076
+B: merged fp32 + AMP (API default),greedy,14,11–14,15,420.65068800002337
+B: merged fp32 + AMP (API default),greedy,15,15–20,23,654.6786640001301
+B: merged fp32 + AMP (API default),greedy,15,15–20,17,480.8512019999398
+B: merged fp32 + AMP (API default),greedy,23,>20,16,367.66855499990925
+B: merged fp32 + AMP (API default),greedy,10,7–10,14,322.01533400007065
+B: merged fp32 + AMP (API default),greedy,8,7–10,10,234.05637099995147
+B: merged fp32 + AMP (API default),greedy,21,>20,14,320.386962999919
+B: merged fp32 + AMP (API default),greedy,6,≤6,8,186.14695300016137
+B: merged fp32 + AMP (API default),greedy,5,≤6,9,199.84614200006945
+B: merged fp32 + AMP (API default),greedy,17,15–20,23,543.3836849999807
+B: merged fp32 + AMP (API default),greedy,21,>20,16,366.66600900002777
+B: merged fp32 + AMP (API default),greedy,4,≤6,10,227.0697429999018
+B: merged fp32 + AMP (API default),greedy,5,≤6,13,306.04057899995496
+B: merged fp32 + AMP (API default),greedy,20,15–20,18,414.7007340000073
+B: merged fp32 + AMP (API default),greedy,11,11–14,10,225.18304799996258
+B: merged fp32 + AMP (API default),greedy,11,11–14,13,302.73406900005284
+B: merged fp32 + AMP (API default),greedy,24,>20,17,391.3284459999886
+B: merged fp32 + AMP (API default),greedy,5,≤6,8,179.12775900003908
+B: merged fp32 + AMP (API default),greedy,16,15–20,24,555.4853759999787
+B: merged fp32 + AMP (API default),greedy,11,11–14,9,201.31916099990121
+B: merged fp32 + AMP (API default),greedy,8,7–10,9,204.9725879999187
+B: merged fp32 + AMP (API default),greedy,19,15–20,16,361.02447000007487
+B: merged fp32 + AMP (API default),greedy,11,11–14,27,630.3599500001837
+B: merged fp32 + AMP (API default),greedy,21,>20,21,498.3872660000088
+B: merged fp32 + AMP (API default),greedy,13,11–14,12,302.6802270001099
+B: merged fp32 + AMP (API default),greedy,28,>20,22,519.327333000092
+B: merged fp32 + AMP (API default),greedy,13,11–14,23,534.2359620001389
+B: merged fp32 + AMP (API default),greedy,5,≤6,8,178.5292429999572
+B: merged fp32 + AMP (API default),greedy,6,≤6,13,293.198005000022
+B: merged fp32 + AMP (API default),greedy,5,≤6,9,202.60910299998613
+B: merged fp32 + AMP (API default),greedy,11,11–14,14,332.10534600016217
+B: merged fp32 + AMP (API default),greedy,9,7–10,12,278.9744740000515
+B: merged fp32 + AMP (API default),greedy,24,>20,13,357.9599199999848
+B: merged fp32 + AMP (API default),greedy,11,11–14,18,505.8198529998208
+B: merged fp32 + AMP (API default),greedy,18,15–20,17,455.0284740000734
+B: merged fp32 + AMP (API default),greedy,9,7–10,12,332.8002729999753
+B: merged fp32 + AMP (API default),greedy,17,15–20,28,795.8455779998985
+B: merged fp32 + AMP (API default),greedy,26,>20,17,471.6324270000314
+B: merged fp32 + AMP (API default),greedy,8,7–10,13,290.6655000001592
+B: merged fp32 + AMP (API default),greedy,13,11–14,23,535.1158429998577
+B: merged fp32 + AMP (API default),greedy,12,11–14,13,291.59463099995264
+B: merged fp32 + AMP (API default),greedy,6,≤6,9,198.62865999994028
+B: merged fp32 + AMP (API default),greedy,16,15–20,17,387.3657770000136
+B: merged fp32 + AMP (API default),greedy,11,11–14,9,216.38344200005122
+B: merged fp32 + AMP (API default),greedy,13,11–14,19,426.3933890001681
+B: merged fp32 + AMP (API default),greedy,5,≤6,10,223.611247000008
+B: merged fp32 + AMP (API default),greedy,8,7–10,20,461.549069000057
+B: merged fp32 + AMP (API default),greedy,10,7–10,10,223.76025899984597
+B: merged fp32 + AMP (API default),greedy,26,>20,24,555.9471859999121
+B: merged fp32 + AMP (API default),greedy,25,>20,25,582.9359710000972
+B: merged fp32 + AMP (API default),greedy,12,11–14,13,297.0274890001292
+B: merged fp32 + AMP (API default),greedy,23,>20,15,354.33958099997653
+B: merged fp32 + AMP (API default),greedy,5,≤6,8,180.19263699989096
+B: merged fp32 + AMP (API default),greedy,23,>20,27,630.1714869998705
+B: merged fp32 + AMP (API default),greedy,7,7–10,10,237.3565119999057
+B: merged fp32 + AMP (API default),greedy,6,≤6,12,269.31256200009557
+B: merged fp32 + AMP (API default),greedy,17,15–20,15,339.88531900013186
+B: merged fp32 + AMP (API default),greedy,13,11–14,12,275.1248669999313
+B: merged fp32 + AMP (API default),greedy,6,≤6,9,212.99086400017586
+B: merged fp32 + AMP (API default),greedy,6,≤6,9,201.3033660000474
+B: merged fp32 + AMP (API default),greedy,21,>20,25,579.0746620000391
+B: merged fp32 + AMP (API default),greedy,15,15–20,23,533.1295989999489
+B: merged fp32 + AMP (API default),greedy,5,≤6,8,177.99069000011514
+B: merged fp32 + AMP (API default),greedy,6,≤6,8,183.63277799994648
+B: merged fp32 + AMP (API default),greedy,19,15–20,21,492.2111529999711
+B: merged fp32 + AMP (API default),greedy,6,≤6,9,200.25687299994388
+B: merged fp32 + AMP (API default),greedy,5,≤6,9,200.44844900007774
+B: merged fp32 + AMP (API default),greedy,20,15–20,21,637.0199840000623
+B: merged fp32 + AMP (API default),greedy,15,15–20,14,378.4918460000881
+B: merged fp32 + AMP (API default),greedy,12,11–14,13,344.51262099992164
+B: merged fp32 + AMP (API default),greedy,17,15–20,12,329.78885099987565
+B: merged fp32 + AMP (API default),greedy,6,≤6,13,373.5863220001647
+B: merged fp32 + AMP (API default),greedy,10,7–10,11,312.8661339999326
+B: merged fp32 + AMP (API default),greedy,12,11–14,10,290.60827700004666
+B: merged fp32 + AMP (API default),greedy,15,15–20,11,251.47721300004378
+B: merged fp32 + AMP (API default),greedy,26,>20,22,503.62692800013065
+B: merged fp32 + AMP (API default),greedy,5,≤6,6,142.6886420001665
+B: merged fp32 + AMP (API default),greedy,23,>20,21,485.63020899996445
+B: merged fp32 + AMP (API default),greedy,20,15–20,21,473.3807269999488
+B: merged fp32 + AMP (API default),greedy,9,7–10,11,256.24416200003
+B: merged fp32 + AMP (API default),greedy,19,15–20,17,388.5582739999336
+B: merged fp32 + AMP (API default),greedy,7,7–10,12,267.5130689999605
+B: merged fp32 + AMP (API default),greedy,8,7–10,16,381.36265499997535
+B: merged fp32 + AMP (API default),greedy,30,>20,20,455.6211970000277
+B: merged fp32 + AMP (API default),greedy,5,≤6,10,219.8927269998876
+B: merged fp32 + AMP (API default),greedy,9,7–10,10,230.60331500005304
+B: merged fp32 + AMP (API default),greedy,11,11–14,10,222.5223539999206
+B: merged fp32 + AMP (API default),greedy,15,15–20,18,405.83823599990865
+B: merged fp32 + AMP (API default),greedy,18,15–20,20,458.76374299996314
+B: merged fp32 + AMP (API default),greedy,6,≤6,10,224.38740400002644
+B: merged fp32 + AMP (API default),greedy,4,≤6,8,177.84354099990196
+B: merged fp32 + AMP (API default),greedy,29,>20,26,604.0915280000263
+B: merged fp32 + AMP (API default),greedy,18,15–20,28,649.2750350000733
+B: merged fp32 + AMP (API default),greedy,12,11–14,13,302.1467860000939
+B: merged fp32 + AMP (API default),greedy,5,≤6,8,177.32650600009947
+B: merged fp32 + AMP (API default),greedy,22,>20,15,340.96729599991704
+B: merged fp32 + AMP (API default),greedy,10,7–10,16,360.5571279999822
+B: merged fp32 + AMP (API default),greedy,13,11–14,24,564.7410799999761
+B: merged fp32 + AMP (API default),greedy,17,15–20,14,319.3887690001702
+B: merged fp32 + AMP (API default),greedy,7,7–10,9,203.03925499979414
+B: merged fp32 + AMP (API default),greedy,16,15–20,11,256.7992880001384
+B: merged fp32 + AMP (API default),greedy,6,≤6,7,157.7149949998784
+B: merged fp32 + AMP (API default),greedy,14,11–14,13,292.98148799989576
+B: merged fp32 + AMP (API default),greedy,7,7–10,22,631.482478999942
+B: merged fp32 + AMP (API default),greedy,16,15–20,31,843.6982569999145
+B: merged fp32 + AMP (API default),greedy,22,>20,19,538.2555559999673
+B: merged fp32 + AMP (API default),greedy,24,>20,25,748.3752599998752
+B: merged fp32 + AMP (API default),greedy,22,>20,25,573.7552230000347
+B: merged fp32 + AMP (API default),greedy,8,7–10,12,276.1664469999232
+B: merged fp32 + AMP (API default),greedy,11,11–14,13,316.27523599991036
+B: merged fp32 + AMP (API default),greedy,5,≤6,8,178.98754800012284
+B: merged fp32 + AMP (API default),greedy,6,≤6,6,134.30826100011473
+B: merged fp32 + AMP (API default),greedy,14,11–14,19,446.32454700013113
+B: merged fp32 + AMP (API default),greedy,12,11–14,15,339.43331199998283
+B: merged fp32 + AMP (API default),greedy,13,11–14,13,294.1320289999112
+B: merged fp32 + AMP (API default),greedy,24,>20,27,631.9521139998869
+B: merged fp32 + AMP (API default),greedy,25,>20,29,666.9821250000041
+B: merged fp32 + AMP (API default),greedy,13,11–14,14,326.03177900000446
+B: merged fp32 + AMP (API default),greedy,4,≤6,8,177.58952100007264
+B: merged fp32 + AMP (API default),greedy,3,≤6,7,154.4247379999888
+B: merged fp32 + AMP (API default),greedy,9,7–10,12,270.6203249999817
+B: merged fp32 + AMP (API default),greedy,21,>20,20,488.27295999990383
+B: merged fp32 + AMP (API default),greedy,18,15–20,25,594.6482259998902
+B: merged fp32 + AMP (API default),greedy,5,≤6,8,190.593028999956
+B: merged fp32 + AMP (API default),greedy,8,7–10,12,271.36179400008587
+B: merged fp32 + AMP (API default),greedy,21,>20,20,457.24035300008836
+B: merged fp32 + AMP (API default),greedy,16,15–20,17,394.5053840000128
+B: merged fp32 + AMP (API default),greedy,22,>20,21,475.2128840000296
+B: merged fp32 + AMP (API default),greedy,21,>20,20,468.73911800003043
+B: merged fp32 + AMP (API default),greedy,8,7–10,11,249.8398709999492
+B: merged fp32 + AMP (API default),greedy,8,7–10,10,224.23660200001905
+B: merged fp32 + AMP (API default),greedy,12,11–14,17,393.0324800001017
+B: merged fp32 + AMP (API default),greedy,8,7–10,9,218.19220899988068
+B: merged fp32 + AMP (API default),greedy,23,>20,25,574.1610059999402
+B: merged fp32 + AMP (API default),greedy,9,7–10,14,397.6039199999377
+B: merged fp32 + AMP (API default),greedy,9,7–10,14,389.7072790000493
+B: merged fp32 + AMP (API default),greedy,12,11–14,14,381.9708210000954
+B: merged fp32 + AMP (API default),greedy,4,≤6,10,262.64057599996704
+B: merged fp32 + AMP (API default),greedy,7,7–10,12,332.84282199997506
+B: merged fp32 + AMP (API default),greedy,23,>20,23,654.412776999834
+B: merged fp32 + AMP (API default),greedy,24,>20,21,567.2096739999688
+B: merged fp32 + AMP (API default),greedy,16,15–20,13,300.63567299998795
+B: merged fp32 + AMP (API default),greedy,6,≤6,10,222.79064400004245
+B: merged fp32 + AMP (API default),greedy,18,15–20,31,726.8202590000783
+B: merged fp32 + AMP (API default),greedy,21,>20,26,601.5310190000491
+B: merged fp32 + AMP (API default),greedy,6,≤6,10,242.59261799988963
+B: merged fp32 + AMP (API default),greedy,7,7–10,7,168.29108399997494
+B: merged fp32 + AMP (API default),greedy,15,15–20,13,299.3858449999607
+B: merged fp32 + AMP (API default),greedy,15,15–20,12,281.71269800009213
+B: merged fp32 + AMP (API default),greedy,20,15–20,17,388.4549130000323
+B: merged fp32 + AMP (API default),greedy,13,11–14,9,198.51456300011705
+B: merged fp32 + AMP (API default),greedy,11,11–14,9,198.81271600002037
+B: merged fp32 + AMP (API default),greedy,12,11–14,13,301.1719080000148
+B: merged fp32 + AMP (API default),greedy,11,11–14,10,227.29321899987553
+B: merged fp32 + AMP (API default),greedy,9,7–10,15,336.0733330000585
+B: merged fp32 + AMP (API default),greedy,16,15–20,13,298.62061399990125
+B: merged fp32 + AMP (API default),greedy,25,>20,17,390.0901670001531
+B: merged fp32 + AMP (API default),greedy,5,≤6,9,198.4916080000403
+B: merged fp32 + AMP (API default),greedy,22,>20,26,596.5259470001456
+B: merged fp32 + AMP (API default),greedy,10,7–10,12,274.7543580001093
+B: merged fp32 + AMP (API default),greedy,11,11–14,17,381.46456300000864
+B: merged fp32 + AMP (API default),greedy,3,≤6,8,188.31153300016013
+B: merged fp32 + AMP (API default),greedy,11,11–14,13,302.74817000008625
+B: merged fp32 + AMP (API default),greedy,21,>20,30,683.0446520000351
+B: merged fp32 + AMP (API default),greedy,13,11–14,12,287.24127100008445
+B: merged fp32 + AMP (API default),beam4,12,11–14,12,319.66197199994895
+B: merged fp32 + AMP (API default),beam4,6,≤6,10,261.07719800006635
+B: merged fp32 + AMP (API default),beam4,6,≤6,10,255.19879599983142
+B: merged fp32 + AMP (API default),beam4,20,15–20,22,680.616203999989
+B: merged fp32 + AMP (API default),beam4,16,15–20,13,459.94655699996656
+B: merged fp32 + AMP (API default),beam4,12,11–14,16,496.0130020001543
+B: merged fp32 + AMP (API default),beam4,10,7–10,15,552.1563090001109
+B: merged fp32 + AMP (API default),beam4,21,>20,24,796.6025540001738
+B: merged fp32 + AMP (API default),beam4,24,>20,28,738.6579759997858
+B: merged fp32 + AMP (API default),beam4,10,7–10,14,359.95421099983105
+B: merged fp32 + AMP (API default),beam4,9,7–10,10,301.3290159999542
+B: merged fp32 + AMP (API default),beam4,22,>20,16,417.97147999977824
+B: merged fp32 + AMP (API default),beam4,26,>20,19,587.4538269999903
+B: merged fp32 + AMP (API default),beam4,8,7–10,15,398.62161699988974
+B: merged fp32 + AMP (API default),beam4,22,>20,34,868.5781990000123
+B: merged fp32 + AMP (API default),beam4,24,>20,23,665.3432909999992
+B: merged fp32 + AMP (API default),beam4,7,7–10,15,372.08037699997476
+B: merged fp32 + AMP (API default),beam4,19,15–20,17,434.4577219999337
+B: merged fp32 + AMP (API default),beam4,12,11–14,12,375.07088500001373
+B: merged fp32 + AMP (API default),beam4,8,7–10,13,312.19705900002737
+B: merged fp32 + AMP (API default),beam4,16,15–20,19,498.2827170001656
+B: merged fp32 + AMP (API default),beam4,6,≤6,11,326.50698500015096
+B: merged fp32 + AMP (API default),beam4,20,15–20,19,486.2990090000494
+B: merged fp32 + AMP (API default),beam4,12,11–14,10,291.2454639999851
+B: merged fp32 + AMP (API default),beam4,8,7–10,10,296.3164279999546
+B: merged fp32 + AMP (API default),beam4,8,7–10,11,309.6408070000507
+B: merged fp32 + AMP (API default),beam4,13,11–14,16,463.83931900004427
+B: merged fp32 + AMP (API default),beam4,9,7–10,22,542.5801540000066
+B: merged fp32 + AMP (API default),beam4,18,15–20,18,441.07260800001313
+B: merged fp32 + AMP (API default),beam4,15,15–20,20,596.4707509999698
+B: merged fp32 + AMP (API default),beam4,5,≤6,9,260.39266899988434
+B: merged fp32 + AMP (API default),beam4,6,≤6,9,263.04891499989935
+B: merged fp32 + AMP (API default),beam4,7,7–10,8,282.93101899998874
+B: merged fp32 + AMP (API default),beam4,7,7–10,11,305.2531779999299
+B: merged fp32 + AMP (API default),beam4,15,15–20,27,879.6511069999724
+B: merged fp32 + AMP (API default),beam4,14,11–14,17,457.15614099981394
+B: merged fp32 + AMP (API default),beam4,15,15–20,24,600.0603100001172
+B: merged fp32 + AMP (API default),beam4,15,15–20,17,417.4315109999043
+B: merged fp32 + AMP (API default),beam4,23,>20,15,395.83684499984884
+B: merged fp32 + AMP (API default),beam4,10,7–10,14,341.7012990000785
+B: merged fp32 + AMP (API default),beam4,8,7–10,10,290.9719760000371
+B: merged fp32 + AMP (API default),beam4,21,>20,14,339.9310910001532
+B: merged fp32 + AMP (API default),beam4,6,≤6,8,223.8541990000158
+B: merged fp32 + AMP (API default),beam4,5,≤6,10,247.5387669999236
+B: merged fp32 + AMP (API default),beam4,17,15–20,21,586.534231000087
+B: merged fp32 + AMP (API default),beam4,21,>20,16,388.34036399998695
+B: merged fp32 + AMP (API default),beam4,4,≤6,10,272.6148449999073
+B: merged fp32 + AMP (API default),beam4,5,≤6,10,238.0227629998899
+B: merged fp32 + AMP (API default),beam4,20,15–20,18,462.8495610002119
+B: merged fp32 + AMP (API default),beam4,11,11–14,9,249.1299190000973
+B: merged fp32 + AMP (API default),beam4,11,11–14,13,322.5498790000074
+B: merged fp32 + AMP (API default),beam4,24,>20,19,493.6276870000711
+B: merged fp32 + AMP (API default),beam4,5,≤6,8,224.05724000009286
+B: merged fp32 + AMP (API default),beam4,16,15–20,20,620.1842549999128
+B: merged fp32 + AMP (API default),beam4,11,11–14,9,226.69951800003219
+B: merged fp32 + AMP (API default),beam4,8,7–10,10,246.65075999996589
+B: merged fp32 + AMP (API default),beam4,19,15–20,15,380.9524349999265
+B: merged fp32 + AMP (API default),beam4,11,11–14,24,615.472058000023
+B: merged fp32 + AMP (API default),beam4,21,>20,21,600.6306799999948
+B: merged fp32 + AMP (API default),beam4,13,11–14,12,287.36644700006764
+B: merged fp32 + AMP (API default),beam4,28,>20,26,783.7809650000054
+B: merged fp32 + AMP (API default),beam4,13,11–14,23,715.902835000179
+B: merged fp32 + AMP (API default),beam4,5,≤6,10,294.15864599991437
+B: merged fp32 + AMP (API default),beam4,6,≤6,10,364.6312180001132
+B: merged fp32 + AMP (API default),beam4,5,≤6,9,327.80644299987216
+B: merged fp32 + AMP (API default),beam4,11,11–14,14,485.4726329999721
+B: merged fp32 + AMP (API default),beam4,9,7–10,12,372.8954509999767
+B: merged fp32 + AMP (API default),beam4,24,>20,15,360.29831499990905
+B: merged fp32 + AMP (API default),beam4,11,11–14,15,440.79533699982676
+B: merged fp32 + AMP (API default),beam4,18,15–20,17,461.68158000000403
+B: merged fp32 + AMP (API default),beam4,9,7–10,12,331.4953849999256
+B: merged fp32 + AMP (API default),beam4,17,15–20,28,701.4119280001978
+B: merged fp32 + AMP (API default),beam4,26,>20,17,419.1369420000228
+B: merged fp32 + AMP (API default),beam4,8,7–10,13,309.65474699996776
+B: merged fp32 + AMP (API default),beam4,13,11–14,20,491.99143400005596
+B: merged fp32 + AMP (API default),beam4,12,11–14,13,314.9479960000008
+B: merged fp32 + AMP (API default),beam4,6,≤6,9,210.97707899980378
+B: merged fp32 + AMP (API default),beam4,16,15–20,17,443.17417799993564
+B: merged fp32 + AMP (API default),beam4,11,11–14,9,246.98523300003217
+B: merged fp32 + AMP (API default),beam4,13,11–14,20,479.03040400001373
+B: merged fp32 + AMP (API default),beam4,5,≤6,10,277.03475099997377
+B: merged fp32 + AMP (API default),beam4,8,7–10,15,399.5154100000491
+B: merged fp32 + AMP (API default),beam4,10,7–10,10,238.75912099993002
+B: merged fp32 + AMP (API default),beam4,26,>20,30,743.6431759999778
+B: merged fp32 + AMP (API default),beam4,25,>20,21,538.3288250000078
+B: merged fp32 + AMP (API default),beam4,12,11–14,13,321.6428729999734
+B: merged fp32 + AMP (API default),beam4,23,>20,15,432.15359600003467
+B: merged fp32 + AMP (API default),beam4,5,≤6,8,217.72171399993567
+B: merged fp32 + AMP (API default),beam4,23,>20,27,689.3908669999291
+B: merged fp32 + AMP (API default),beam4,7,7–10,10,240.1213910000024
+B: merged fp32 + AMP (API default),beam4,6,≤6,12,287.8050819999771
+B: merged fp32 + AMP (API default),beam4,17,15–20,15,533.2803640001202
+B: merged fp32 + AMP (API default),beam4,13,11–14,12,372.5815150000926
+B: merged fp32 + AMP (API default),beam4,6,≤6,9,289.4510869998612
+B: merged fp32 + AMP (API default),beam4,6,≤6,9,308.8233000000855
+B: merged fp32 + AMP (API default),beam4,21,>20,26,798.0614660000356
+B: merged fp32 + AMP (API default),beam4,15,15–20,19,601.7043780000222
+B: merged fp32 + AMP (API default),beam4,5,≤6,8,214.09978299993782
+B: merged fp32 + AMP (API default),beam4,6,≤6,8,197.9299650001849
+B: merged fp32 + AMP (API default),beam4,19,15–20,22,559.5472879999761
+B: merged fp32 + AMP (API default),beam4,6,≤6,9,210.78699000008783
+B: merged fp32 + AMP (API default),beam4,5,≤6,9,238.80304399995111
+B: merged fp32 + AMP (API default),beam4,20,15–20,22,561.6146689999368
+B: merged fp32 + AMP (API default),beam4,15,15–20,15,356.3228959999378
+B: merged fp32 + AMP (API default),beam4,12,11–14,13,391.7988420000711
+B: merged fp32 + AMP (API default),beam4,17,15–20,14,346.4201320000484
+B: merged fp32 + AMP (API default),beam4,6,≤6,12,308.80662899994604
+B: merged fp32 + AMP (API default),beam4,10,7–10,11,267.8548750000118
+B: merged fp32 + AMP (API default),beam4,12,11–14,10,266.69496299996354
+B: merged fp32 + AMP (API default),beam4,15,15–20,11,309.40749000001233
+B: merged fp32 + AMP (API default),beam4,26,>20,22,663.4346820001156
+B: merged fp32 + AMP (API default),beam4,5,≤6,6,310.1355720000356
+B: merged fp32 + AMP (API default),beam4,23,>20,22,536.233435999975
+B: merged fp32 + AMP (API default),beam4,20,15–20,21,532.8722619999553
+B: merged fp32 + AMP (API default),beam4,9,7–10,11,290.4191060001722
+B: merged fp32 + AMP (API default),beam4,19,15–20,17,421.3405979999152
+B: merged fp32 + AMP (API default),beam4,7,7–10,12,307.9296749999685
+B: merged fp32 + AMP (API default),beam4,8,7–10,16,412.03494199999113
+B: merged fp32 + AMP (API default),beam4,30,>20,22,548.4137900000405
+B: merged fp32 + AMP (API default),beam4,5,≤6,8,213.23247099985565
+B: merged fp32 + AMP (API default),beam4,9,7–10,10,271.8117039999015
+B: merged fp32 + AMP (API default),beam4,11,11–14,10,247.62154399991232
+B: merged fp32 + AMP (API default),beam4,15,15–20,16,509.03404500013494
+B: merged fp32 + AMP (API default),beam4,18,15–20,18,632.7526479999506
+B: merged fp32 + AMP (API default),beam4,6,≤6,10,317.13896299993394
+B: merged fp32 + AMP (API default),beam4,4,≤6,7,223.49369499988825
+B: merged fp32 + AMP (API default),beam4,29,>20,23,761.0215319998588
+B: merged fp32 + AMP (API default),beam4,18,15–20,26,902.8815130000112
+B: merged fp32 + AMP (API default),beam4,12,11–14,13,364.6241310000278
+B: merged fp32 + AMP (API default),beam4,5,≤6,9,226.74482599995827
+B: merged fp32 + AMP (API default),beam4,22,>20,15,385.34285199989426
+B: merged fp32 + AMP (API default),beam4,10,7–10,16,409.11964299993997
+B: merged fp32 + AMP (API default),beam4,13,11–14,25,625.4565999997794
+B: merged fp32 + AMP (API default),beam4,17,15–20,16,384.23954699987917
+B: merged fp32 + AMP (API default),beam4,7,7–10,9,256.9661889999679
+B: merged fp32 + AMP (API default),beam4,16,15–20,11,264.1428580000138
+B: merged fp32 + AMP (API default),beam4,6,≤6,7,238.7919640000291
+B: merged fp32 + AMP (API default),beam4,14,11–14,13,449.5236110001315
+B: merged fp32 + AMP (API default),beam4,7,7–10,20,489.7612830000071
+B: merged fp32 + AMP (API default),beam4,16,15–20,25,672.2985260000769
+B: merged fp32 + AMP (API default),beam4,22,>20,18,537.96830400006
+B: merged fp32 + AMP (API default),beam4,24,>20,25,622.7572519999285
+B: merged fp32 + AMP (API default),beam4,22,>20,25,636.6284660000474
+B: merged fp32 + AMP (API default),beam4,8,7–10,11,304.47158700008004
+B: merged fp32 + AMP (API default),beam4,11,11–14,12,309.80554899997514
+B: merged fp32 + AMP (API default),beam4,5,≤6,8,215.57713399988643
+B: merged fp32 + AMP (API default),beam4,6,≤6,6,151.4411390000987
+B: merged fp32 + AMP (API default),beam4,14,11–14,20,528.627404999952
+B: merged fp32 + AMP (API default),beam4,12,11–14,14,359.81405300003644
+B: merged fp32 + AMP (API default),beam4,13,11–14,13,311.2424519999877
+B: merged fp32 + AMP (API default),beam4,24,>20,26,658.8725809999687
+B: merged fp32 + AMP (API default),beam4,25,>20,26,738.8949500000308
+B: merged fp32 + AMP (API default),beam4,13,11–14,15,474.0937799999756
+B: merged fp32 + AMP (API default),beam4,4,≤6,8,290.13328899986845
+B: merged fp32 + AMP (API default),beam4,3,≤6,7,279.3678410000666
+B: merged fp32 + AMP (API default),beam4,9,7–10,11,442.0251429999098
+B: merged fp32 + AMP (API default),beam4,21,>20,17,597.3315530000036
+B: merged fp32 + AMP (API default),beam4,18,15–20,27,771.4959449999697
+B: merged fp32 + AMP (API default),beam4,5,≤6,9,212.18919400007508
+B: merged fp32 + AMP (API default),beam4,8,7–10,14,333.49497800008976
+B: merged fp32 + AMP (API default),beam4,21,>20,19,518.3234700000412
+B: merged fp32 + AMP (API default),beam4,16,15–20,17,414.1523039997992
+B: merged fp32 + AMP (API default),beam4,22,>20,24,602.0760989999872
+B: merged fp32 + AMP (API default),beam4,21,>20,20,581.4035319999675
+B: merged fp32 + AMP (API default),beam4,8,7–10,9,287.6344930000414
+B: merged fp32 + AMP (API default),beam4,8,7–10,10,244.908396000028
+B: merged fp32 + AMP (API default),beam4,12,11–14,17,434.30040199996256
+B: merged fp32 + AMP (API default),beam4,8,7–10,9,286.7716340001607
+B: merged fp32 + AMP (API default),beam4,23,>20,26,635.6260669999756
+B: merged fp32 + AMP (API default),beam4,9,7–10,11,336.00470300007146
+B: merged fp32 + AMP (API default),beam4,9,7–10,14,370.77330099987194
+B: merged fp32 + AMP (API default),beam4,12,11–14,14,338.8274690000799
+B: merged fp32 + AMP (API default),beam4,4,≤6,10,241.30940100008047
+B: merged fp32 + AMP (API default),beam4,7,7–10,13,367.08283500001926
+B: merged fp32 + AMP (API default),beam4,23,>20,20,505.0445800000034
+B: merged fp32 + AMP (API default),beam4,24,>20,21,514.0154119999352
+B: merged fp32 + AMP (API default),beam4,16,15–20,15,408.6632670000654
+B: merged fp32 + AMP (API default),beam4,6,≤6,12,312.23418199988373
+B: merged fp32 + AMP (API default),beam4,18,15–20,25,664.3138509998607
+B: merged fp32 + AMP (API default),beam4,21,>20,23,671.2761880000926
+B: merged fp32 + AMP (API default),beam4,6,≤6,10,239.85166800002844
+B: merged fp32 + AMP (API default),beam4,7,7–10,7,237.16138499980843
+B: merged fp32 + AMP (API default),beam4,15,15–20,13,470.5378749999909
+B: merged fp32 + AMP (API default),beam4,15,15–20,12,354.69920199989247
+B: merged fp32 + AMP (API default),beam4,20,15–20,19,538.3869959998719
+B: merged fp32 + AMP (API default),beam4,13,11–14,9,300.9544400001687
+B: merged fp32 + AMP (API default),beam4,11,11–14,9,309.47018999995635
+B: merged fp32 + AMP (API default),beam4,12,11–14,14,467.44820300000356
+B: merged fp32 + AMP (API default),beam4,11,11–14,10,256.35723499999585
+B: merged fp32 + AMP (API default),beam4,9,7–10,16,386.93929099986235
+B: merged fp32 + AMP (API default),beam4,16,15–20,13,307.6903769999717
+B: merged fp32 + AMP (API default),beam4,25,>20,17,469.74166099994363
+B: merged fp32 + AMP (API default),beam4,5,≤6,9,220.05758499994954
+B: merged fp32 + AMP (API default),beam4,22,>20,26,645.4665580001802
+B: merged fp32 + AMP (API default),beam4,10,7–10,12,299.66437699999915
+B: merged fp32 + AMP (API default),beam4,11,11–14,17,435.28600800004824
+B: merged fp32 + AMP (API default),beam4,3,≤6,8,217.15182899993124
+B: merged fp32 + AMP (API default),beam4,11,11–14,13,346.8420120000246
+B: merged fp32 + AMP (API default),beam4,21,>20,29,711.3985299999968
+B: merged fp32 + AMP (API default),beam4,13,11–14,12,351.3877729999422
+C: merged fp16,greedy,12,11–14,13,174.18476399984684
+C: merged fp16,greedy,6,≤6,10,141.30269500014947
+C: merged fp16,greedy,6,≤6,8,105.89723099997173
+C: merged fp16,greedy,20,15–20,22,281.2912589999996
+C: merged fp16,greedy,16,15–20,16,204.87345299989101
+C: merged fp16,greedy,12,11–14,14,185.2254630000516
+C: merged fp16,greedy,10,7–10,14,190.0415800000701
+C: merged fp16,greedy,21,>20,25,327.12821299992356
+C: merged fp16,greedy,24,>20,29,370.7105290000072
+C: merged fp16,greedy,10,7–10,14,185.38965199991253
+C: merged fp16,greedy,9,7–10,9,127.70362900005239
+C: merged fp16,greedy,22,>20,15,196.5766610001083
+C: merged fp16,greedy,26,>20,20,260.82787899986215
+C: merged fp16,greedy,8,7–10,16,205.6014839999989
+C: merged fp16,greedy,22,>20,34,454.6023670000068
+C: merged fp16,greedy,24,>20,26,332.73800399979336
+C: merged fp16,greedy,7,7–10,11,142.21569300002557
+C: merged fp16,greedy,19,15–20,19,252.84218999991026
+C: merged fp16,greedy,12,11–14,12,158.649935999847
+C: merged fp16,greedy,8,7–10,13,184.81051499998102
+C: merged fp16,greedy,16,15–20,19,240.71842500006824
+C: merged fp16,greedy,6,≤6,13,235.04983399993762
+C: merged fp16,greedy,20,15–20,19,319.13737700006095
+C: merged fp16,greedy,12,11–14,10,180.26926199991067
+C: merged fp16,greedy,8,7–10,11,175.46491100006278
+C: merged fp16,greedy,8,7–10,13,210.19124500003272
+C: merged fp16,greedy,13,11–14,21,331.1902079999527
+C: merged fp16,greedy,9,7–10,22,373.31903200015404
+C: merged fp16,greedy,18,15–20,16,278.1476720001592
+C: merged fp16,greedy,15,15–20,20,405.41467599996395
+C: merged fp16,greedy,5,≤6,9,155.0818650000565
+C: merged fp16,greedy,6,≤6,9,119.34675699990294
+C: merged fp16,greedy,7,7–10,8,113.96463300002324
+C: merged fp16,greedy,7,7–10,11,143.5179079999216
+C: merged fp16,greedy,15,15–20,23,313.8854329999958
+C: merged fp16,greedy,14,11–14,15,192.5970749998669
+C: merged fp16,greedy,15,15–20,23,331.63569599992115
+C: merged fp16,greedy,15,15–20,17,225.1442209999368
+C: merged fp16,greedy,23,>20,16,211.35232599999654
+C: merged fp16,greedy,10,7–10,14,183.40621500010457
+C: merged fp16,greedy,8,7–10,10,129.37677400009306
+C: merged fp16,greedy,21,>20,14,182.56451399997786
+C: merged fp16,greedy,6,≤6,8,114.05725899999197
+C: merged fp16,greedy,5,≤6,9,115.35324799979207
+C: merged fp16,greedy,17,15–20,23,299.88738399993053
+C: merged fp16,greedy,21,>20,16,204.03485700012425
+C: merged fp16,greedy,4,≤6,10,129.11714000006214
+C: merged fp16,greedy,5,≤6,13,172.27394800011098
+C: merged fp16,greedy,20,15–20,18,245.77965900016352
+C: merged fp16,greedy,11,11–14,10,127.22918899999058
+C: merged fp16,greedy,11,11–14,13,173.77515499993024
+C: merged fp16,greedy,24,>20,17,219.09086000005118
+C: merged fp16,greedy,5,≤6,8,106.16424800014101
+C: merged fp16,greedy,16,15–20,24,322.37674999987576
+C: merged fp16,greedy,11,11–14,9,115.17925499992998
+C: merged fp16,greedy,8,7–10,9,119.19139899987385
+C: merged fp16,greedy,19,15–20,16,205.4118280000239
+C: merged fp16,greedy,11,11–14,27,362.8624989999025
+C: merged fp16,greedy,21,>20,21,281.51284299997315
+C: merged fp16,greedy,13,11–14,12,159.4104220000645
+C: merged fp16,greedy,28,>20,22,281.34625400002733
+C: merged fp16,greedy,13,11–14,23,299.3104409999887
+C: merged fp16,greedy,5,≤6,8,103.65488200000073
+C: merged fp16,greedy,6,≤6,13,180.1108810000187
+C: merged fp16,greedy,5,≤6,9,117.31063399997765
+C: merged fp16,greedy,11,11–14,14,183.49195700011478
+C: merged fp16,greedy,9,7–10,12,154.56479299996317
+C: merged fp16,greedy,24,>20,13,169.697737999968
+C: merged fp16,greedy,11,11–14,18,230.46084899988273
+C: merged fp16,greedy,18,15–20,17,227.32590299983713
+C: merged fp16,greedy,9,7–10,12,155.58118800004195
+C: merged fp16,greedy,17,15–20,28,360.6432300000506
+C: merged fp16,greedy,26,>20,17,215.81701099989914
+C: merged fp16,greedy,8,7–10,13,181.91887399984807
+C: merged fp16,greedy,13,11–14,23,293.2612300000983
+C: merged fp16,greedy,12,11–14,13,164.9855190000835
+C: merged fp16,greedy,6,≤6,9,114.62681400007568
+C: merged fp16,greedy,16,15–20,17,217.59844600001088
+C: merged fp16,greedy,11,11–14,9,114.6847519999028
+C: merged fp16,greedy,13,11–14,19,258.9611809999042
+C: merged fp16,greedy,5,≤6,10,129.9446570001237
+C: merged fp16,greedy,8,7–10,20,325.9832160001679
+C: merged fp16,greedy,10,7–10,10,166.08077099999718
+C: merged fp16,greedy,26,>20,24,401.7533700000513
+C: merged fp16,greedy,25,>20,25,409.8244279998653
+C: merged fp16,greedy,12,11–14,13,207.2738809999919
+C: merged fp16,greedy,23,>20,15,241.42028899996149
+C: merged fp16,greedy,5,≤6,8,156.58886200003508
+C: merged fp16,greedy,23,>20,27,462.87044800010335
+C: merged fp16,greedy,7,7–10,10,197.8169760000128
+C: merged fp16,greedy,6,≤6,12,206.11620099998618
+C: merged fp16,greedy,17,15–20,15,212.81176499996945
+C: merged fp16,greedy,13,11–14,12,156.7204129999027
+C: merged fp16,greedy,6,≤6,9,116.64729100016302
+C: merged fp16,greedy,6,≤6,9,118.28030699984993
+C: merged fp16,greedy,21,>20,25,322.2252870000375
+C: merged fp16,greedy,15,15–20,23,312.37799499990615
+C: merged fp16,greedy,5,≤6,8,103.48664399998597
+C: merged fp16,greedy,6,≤6,8,104.77079399993272
+C: merged fp16,greedy,19,15–20,21,273.9104879999559
+C: merged fp16,greedy,6,≤6,9,117.62760300007358
+C: merged fp16,greedy,5,≤6,9,114.93632699989575
+C: merged fp16,greedy,20,15–20,21,284.3509360000098
+C: merged fp16,greedy,15,15–20,14,181.88480799994977
+C: merged fp16,greedy,12,11–14,13,167.61971200003245
+C: merged fp16,greedy,17,15–20,12,157.1288210000148
+C: merged fp16,greedy,6,≤6,13,169.04520000002776
+C: merged fp16,greedy,10,7–10,11,144.96845400003622
+C: merged fp16,greedy,12,11–14,10,126.86517399993136
+C: merged fp16,greedy,15,15–20,11,154.56907799989494
+C: merged fp16,greedy,26,>20,22,285.8507909998025
+C: merged fp16,greedy,5,≤6,6,77.83476400004474
+C: merged fp16,greedy,23,>20,21,270.82039800006896
+C: merged fp16,greedy,20,15–20,21,284.2579460000252
+C: merged fp16,greedy,9,7–10,11,141.1059209999621
+C: merged fp16,greedy,19,15–20,17,218.9548769999874
+C: merged fp16,greedy,7,7–10,12,154.5725500000117
+C: merged fp16,greedy,8,7–10,16,204.68926400008058
+C: merged fp16,greedy,30,>20,20,257.82938399993327
+C: merged fp16,greedy,5,≤6,10,140.11337700003423
+C: merged fp16,greedy,9,7–10,10,126.31273800002418
+C: merged fp16,greedy,11,11–14,10,127.72909399996024
+C: merged fp16,greedy,15,15–20,18,231.1151419999078
+C: merged fp16,greedy,18,15–20,20,258.5359510001126
+C: merged fp16,greedy,6,≤6,10,126.32820499993613
+C: merged fp16,greedy,4,≤6,8,115.87759500002903
+C: merged fp16,greedy,29,>20,26,337.6211180000155
+C: merged fp16,greedy,18,15–20,28,363.447110999914
+C: merged fp16,greedy,12,11–14,13,165.7918260000315
+C: merged fp16,greedy,5,≤6,8,116.38911599993662
+C: merged fp16,greedy,22,>20,15,193.5899090001385
+C: merged fp16,greedy,10,7–10,16,208.80865899994205
+C: merged fp16,greedy,13,11–14,24,310.3925939999499
+C: merged fp16,greedy,17,15–20,14,177.49414600007185
+C: merged fp16,greedy,7,7–10,9,122.34150299991597
+C: merged fp16,greedy,16,15–20,11,149.27084600003582
+C: merged fp16,greedy,6,≤6,7,90.63960699995732
+C: merged fp16,greedy,14,11–14,13,187.23453900020104
+C: merged fp16,greedy,7,7–10,22,290.78008900000896
+C: merged fp16,greedy,16,15–20,31,415.3827860000092
+C: merged fp16,greedy,22,>20,19,244.09014599996226
+C: merged fp16,greedy,24,>20,25,393.66717799998696
+C: merged fp16,greedy,22,>20,25,408.6027060000106
+C: merged fp16,greedy,8,7–10,12,192.42001199995684
+C: merged fp16,greedy,11,11–14,13,207.14924200001406
+C: merged fp16,greedy,5,≤6,8,125.20958900017831
+C: merged fp16,greedy,6,≤6,6,92.84096900000804
+C: merged fp16,greedy,14,11–14,19,316.32065600001624
+C: merged fp16,greedy,12,11–14,15,267.3733659999016
+C: merged fp16,greedy,13,11–14,13,226.40375700007098
+C: merged fp16,greedy,24,>20,27,492.82319100007044
+C: merged fp16,greedy,25,>20,29,396.5167429998928
+C: merged fp16,greedy,13,11–14,14,181.3220149999779
+C: merged fp16,greedy,4,≤6,8,99.80891400005021
+C: merged fp16,greedy,3,≤6,7,88.2558410000911
+C: merged fp16,greedy,9,7–10,12,155.1316190000307
+C: merged fp16,greedy,21,>20,20,266.05196800005615
+C: merged fp16,greedy,18,15–20,25,316.0092540001642
+C: merged fp16,greedy,5,≤6,8,107.44190400009757
+C: merged fp16,greedy,8,7–10,12,164.31682500001443
+C: merged fp16,greedy,21,>20,20,266.04483699998127
+C: merged fp16,greedy,16,15–20,17,234.02966699995886
+C: merged fp16,greedy,22,>20,21,272.07084400015447
+C: merged fp16,greedy,21,>20,20,260.6954110001425
+C: merged fp16,greedy,8,7–10,11,138.14317500009565
+C: merged fp16,greedy,8,7–10,10,128.11014700014312
+C: merged fp16,greedy,12,11–14,17,228.35696600009214
+C: merged fp16,greedy,8,7–10,9,114.80888200003392
+C: merged fp16,greedy,23,>20,25,318.2609080001839
+C: merged fp16,greedy,9,7–10,14,176.59014599985312
+C: merged fp16,greedy,9,7–10,14,179.31066800019835
+C: merged fp16,greedy,12,11–14,14,195.47768300003554
+C: merged fp16,greedy,4,≤6,10,127.51603500009878
+C: merged fp16,greedy,7,7–10,12,159.56721700013077
+C: merged fp16,greedy,23,>20,23,299.2198649999409
+C: merged fp16,greedy,24,>20,21,270.93644799992944
+C: merged fp16,greedy,16,15–20,13,179.68522599994685
+C: merged fp16,greedy,6,≤6,10,127.87282599992977
+C: merged fp16,greedy,18,15–20,31,404.81930900000407
+C: merged fp16,greedy,21,>20,26,339.9973829998544
+C: merged fp16,greedy,6,≤6,10,154.12488499987376
+C: merged fp16,greedy,7,7–10,7,91.47328799986099
+C: merged fp16,greedy,15,15–20,13,173.3149560000129
+C: merged fp16,greedy,15,15–20,12,154.905312999972
+C: merged fp16,greedy,20,15–20,17,220.6607289999738
+C: merged fp16,greedy,13,11–14,9,118.90974700008883
+C: merged fp16,greedy,11,11–14,9,127.28680999998687
+C: merged fp16,greedy,12,11–14,13,178.8840970000365
+C: merged fp16,greedy,11,11–14,10,128.1334989998868
+C: merged fp16,greedy,9,7–10,15,194.4925069999499
+C: merged fp16,greedy,16,15–20,13,166.97668500000873
+C: merged fp16,greedy,25,>20,17,218.7478650000685
+C: merged fp16,greedy,5,≤6,9,117.41107000011652
+C: merged fp16,greedy,22,>20,26,352.91746200005036
+C: merged fp16,greedy,10,7–10,12,155.57746500007852
+C: merged fp16,greedy,11,11–14,17,220.0769850001052
+C: merged fp16,greedy,3,≤6,8,102.70215000014105
+C: merged fp16,greedy,11,11–14,13,172.24573999988024
+C: merged fp16,greedy,21,>20,30,404.414289999977
+C: merged fp16,greedy,13,11–14,12,154.20086799986166
+C: merged fp16,beam4,12,11–14,12,241.6001659998983
+C: merged fp16,beam4,6,≤6,10,190.46062000006714
+C: merged fp16,beam4,6,≤6,10,176.5788050001902
+C: merged fp16,beam4,20,15–20,22,375.81853199981197
+C: merged fp16,beam4,16,15–20,13,292.4585529999604
+C: merged fp16,beam4,12,11–14,16,323.22316100021453
+C: merged fp16,beam4,10,7–10,15,363.5501579999527
+C: merged fp16,beam4,21,>20,24,501.5597680001065
+C: merged fp16,beam4,24,>20,28,415.1358619999428
+C: merged fp16,beam4,10,7–10,14,212.360905000196
+C: merged fp16,beam4,9,7–10,10,186.38499200005754
+C: merged fp16,beam4,22,>20,16,239.87033000003066
+C: merged fp16,beam4,26,>20,19,339.9964130001081
+C: merged fp16,beam4,8,7–10,15,223.80804700014778
+C: merged fp16,beam4,22,>20,34,506.72045199985405
+C: merged fp16,beam4,24,>20,23,380.8010650000142
+C: merged fp16,beam4,7,7–10,15,215.2805339999304
+C: merged fp16,beam4,19,15–20,17,271.3688239998646
+C: merged fp16,beam4,12,11–14,12,210.79380799983483
+C: merged fp16,beam4,8,7–10,13,183.92081699994378
+C: merged fp16,beam4,16,15–20,19,281.5476989999297
+C: merged fp16,beam4,6,≤6,11,182.5126899998395
+C: merged fp16,beam4,20,15–20,23,336.7732840001736
+C: merged fp16,beam4,12,11–14,10,170.04085999997187
+C: merged fp16,beam4,8,7–10,10,170.9205980000661
+C: merged fp16,beam4,8,7–10,11,199.4697200000246
+C: merged fp16,beam4,13,11–14,16,281.4723310000318
+C: merged fp16,beam4,9,7–10,22,308.9289600000029
+C: merged fp16,beam4,18,15–20,18,254.56297999994604
+C: merged fp16,beam4,15,15–20,20,287.14617700006784
+C: merged fp16,beam4,5,≤6,9,138.65955200003555
+C: merged fp16,beam4,6,≤6,9,126.36889999998857
+C: merged fp16,beam4,7,7–10,8,140.46807199997602
+C: merged fp16,beam4,7,7–10,11,156.66514600002301
+C: merged fp16,beam4,15,15–20,27,395.64349299985224
+C: merged fp16,beam4,14,11–14,17,253.5677509999914
+C: merged fp16,beam4,15,15–20,24,341.1957570001505
+C: merged fp16,beam4,15,15–20,17,240.60125799996968
+C: merged fp16,beam4,23,>20,15,228.53338000004442
+C: merged fp16,beam4,10,7–10,14,210.82106600010775
+C: merged fp16,beam4,8,7–10,10,170.4622190000009
+C: merged fp16,beam4,21,>20,14,199.0891749999264
+C: merged fp16,beam4,6,≤6,8,126.81184300004134
+C: merged fp16,beam4,5,≤6,10,144.04250600000523
+C: merged fp16,beam4,17,15–20,21,348.55132999996385
+C: merged fp16,beam4,21,>20,16,224.08335099999022
+C: merged fp16,beam4,4,≤6,10,155.14065999991544
+C: merged fp16,beam4,5,≤6,10,140.76194699987354
+C: merged fp16,beam4,20,15–20,18,335.6914280000183
+C: merged fp16,beam4,11,11–14,9,197.5834869999744
+C: merged fp16,beam4,11,11–14,13,229.92723800007298
+C: merged fp16,beam4,24,>20,19,335.108511000044
+C: merged fp16,beam4,5,≤6,8,155.15319099995395
+C: merged fp16,beam4,16,15–20,20,417.3482049998256
+C: merged fp16,beam4,11,11–14,9,152.80036500007554
+C: merged fp16,beam4,8,7–10,10,195.1428949998899
+C: merged fp16,beam4,19,15–20,15,264.73560300019017
+C: merged fp16,beam4,11,11–14,24,488.8251740001124
+C: merged fp16,beam4,21,>20,21,346.2114760000077
+C: merged fp16,beam4,13,11–14,12,167.5609000001259
+C: merged fp16,beam4,28,>20,26,416.7559850000089
+C: merged fp16,beam4,13,11–14,23,352.6092960000824
+C: merged fp16,beam4,5,≤6,10,137.56411899998966
+C: merged fp16,beam4,6,≤6,10,180.55576400001883
+C: merged fp16,beam4,5,≤6,9,153.09744000001047
+C: merged fp16,beam4,11,11–14,14,222.99755300014112
+C: merged fp16,beam4,9,7–10,12,194.03891400020257
+C: merged fp16,beam4,24,>20,15,210.04188000006252
+C: merged fp16,beam4,11,11–14,15,260.2174140001807
+C: merged fp16,beam4,18,15–20,17,270.6921300000431
+C: merged fp16,beam4,9,7–10,12,196.50385800014192
+C: merged fp16,beam4,17,15–20,28,397.65140000008614
+C: merged fp16,beam4,26,>20,17,237.94656100017164
+C: merged fp16,beam4,8,7–10,13,183.89606300002015
+C: merged fp16,beam4,13,11–14,20,293.8654009999482
+C: merged fp16,beam4,12,11–14,13,186.59876500009887
+C: merged fp16,beam4,6,≤6,9,126.55653199999506
+C: merged fp16,beam4,16,15–20,17,255.6627540000136
+C: merged fp16,beam4,11,11–14,9,139.5258609998109
+C: merged fp16,beam4,13,11–14,20,295.9413759999734
+C: merged fp16,beam4,5,≤6,10,157.8116329999375
+C: merged fp16,beam4,8,7–10,15,225.45360999993136
+C: merged fp16,beam4,10,7–10,10,140.9424549999585
+C: merged fp16,beam4,26,>20,30,438.0773870000212
+C: merged fp16,beam4,25,>20,21,323.9722969999548
+C: merged fp16,beam4,12,11–14,13,191.02207200012344
+C: merged fp16,beam4,23,>20,15,259.79152300010355
+C: merged fp16,beam4,5,≤6,8,138.54854500004876
+C: merged fp16,beam4,23,>20,27,391.8778620000012
+C: merged fp16,beam4,7,7–10,10,137.3858880001535
+C: merged fp16,beam4,6,≤6,12,164.45191599996178
+C: merged fp16,beam4,17,15–20,15,237.4347370000578
+C: merged fp16,beam4,13,11–14,12,194.4817950000015
+C: merged fp16,beam4,6,≤6,9,142.04136400007883
+C: merged fp16,beam4,6,≤6,9,151.40943899996273
+C: merged fp16,beam4,21,>20,26,377.3575160000746
+C: merged fp16,beam4,15,15–20,19,293.47006199986936
+C: merged fp16,beam4,5,≤6,8,128.52855799997087
+C: merged fp16,beam4,6,≤6,8,117.72553300011168
+C: merged fp16,beam4,19,15–20,22,323.186996000004
+C: merged fp16,beam4,6,≤6,9,130.33923499983757
+C: merged fp16,beam4,5,≤6,9,221.48076799999217
+C: merged fp16,beam4,20,15–20,22,421.26754399987476
+C: merged fp16,beam4,15,15–20,15,296.93680699983815
+C: merged fp16,beam4,12,11–14,13,273.5367769998902
+C: merged fp16,beam4,17,15–20,14,253.16742299992256
+C: merged fp16,beam4,6,≤6,12,217.30798099997628
+C: merged fp16,beam4,10,7–10,11,210.0471449998622
+C: merged fp16,beam4,12,11–14,10,204.23964699989483
+C: merged fp16,beam4,15,15–20,11,258.60994499998924
+C: merged fp16,beam4,26,>20,22,471.12698699993416
+C: merged fp16,beam4,5,≤6,6,206.46444800013342
+C: merged fp16,beam4,23,>20,22,329.9079000000802
+C: merged fp16,beam4,20,15–20,21,333.8940779999575
+C: merged fp16,beam4,9,7–10,11,169.22073699993234
+C: merged fp16,beam4,19,15–20,17,241.49551800019253
+C: merged fp16,beam4,7,7–10,12,183.4766720000971
+C: merged fp16,beam4,8,7–10,16,250.2687490000426
+C: merged fp16,beam4,30,>20,22,314.0973160000158
+C: merged fp16,beam4,5,≤6,8,127.31401500013817
+C: merged fp16,beam4,9,7–10,10,153.2071410001663
+C: merged fp16,beam4,11,11–14,10,141.8905549999181
+C: merged fp16,beam4,15,15–20,16,311.91809800020565
+C: merged fp16,beam4,18,15–20,18,306.55778200002715
+C: merged fp16,beam4,6,≤6,10,152.22186500000134
+C: merged fp16,beam4,4,≤6,7,112.90708299998187
+C: merged fp16,beam4,29,>20,23,368.5458400000243
+C: merged fp16,beam4,18,15–20,26,421.67673299991293
+C: merged fp16,beam4,12,11–14,13,195.58326800006398
+C: merged fp16,beam4,5,≤6,9,128.37139199996273
+C: merged fp16,beam4,22,>20,15,227.5626440000451
+C: merged fp16,beam4,10,7–10,16,250.5536060000395
+C: merged fp16,beam4,13,11–14,25,351.0663839999779
+C: merged fp16,beam4,17,15–20,16,226.70785799982696
+C: merged fp16,beam4,7,7–10,9,145.59459700012667
+C: merged fp16,beam4,16,15–20,11,155.5979299998853
+C: merged fp16,beam4,6,≤6,7,153.1934239999373
+C: merged fp16,beam4,14,11–14,13,256.1516619998656
+C: merged fp16,beam4,7,7–10,20,282.9394080001748
+C: merged fp16,beam4,16,15–20,25,395.86032000011073
+C: merged fp16,beam4,22,>20,18,309.8726660000466
+C: merged fp16,beam4,24,>20,25,353.5533649999252
+C: merged fp16,beam4,22,>20,25,372.66016800003854
+C: merged fp16,beam4,8,7–10,11,166.8174490000638
+C: merged fp16,beam4,11,11–14,12,179.6822759999941
+C: merged fp16,beam4,5,≤6,8,126.29131900007451
+C: merged fp16,beam4,6,≤6,6,81.90694100017026
+C: merged fp16,beam4,14,11–14,20,293.7549749999562
+C: merged fp16,beam4,12,11–14,14,218.06890899983955
+C: merged fp16,beam4,13,11–14,13,179.47982699979548
+C: merged fp16,beam4,24,>20,26,378.44193799992354
+C: merged fp16,beam4,25,>20,26,510.08036600001105
+C: merged fp16,beam4,13,11–14,15,280.92431599998235
+C: merged fp16,beam4,4,≤6,8,181.69644700014942
+C: merged fp16,beam4,3,≤6,7,170.9752330000356
+C: merged fp16,beam4,9,7–10,11,272.02135400011684
+C: merged fp16,beam4,21,>20,17,353.9966230000573
+C: merged fp16,beam4,18,15–20,27,499.40123300007144
+C: merged fp16,beam4,5,≤6,9,157.72736200005966
+C: merged fp16,beam4,8,7–10,14,319.08441500013396
+C: merged fp16,beam4,21,>20,19,316.64517399985925
+C: merged fp16,beam4,16,15–20,17,241.44952100004957
+C: merged fp16,beam4,22,>20,24,345.1346829999693
+C: merged fp16,beam4,21,>20,20,359.6943289999217
+C: merged fp16,beam4,8,7–10,9,171.537699000055
+C: merged fp16,beam4,8,7–10,10,140.93124999999418
+C: merged fp16,beam4,12,11–14,17,252.80955400012317
+C: merged fp16,beam4,8,7–10,9,181.37099699993087
+C: merged fp16,beam4,23,>20,26,373.27457399987907
+C: merged fp16,beam4,9,7–10,11,199.03876400007903
+C: merged fp16,beam4,9,7–10,14,209.77985099989382
+C: merged fp16,beam4,12,11–14,14,208.27030500004184
+C: merged fp16,beam4,4,≤6,10,140.97907500013207
+C: merged fp16,beam4,7,7–10,13,212.09758500003772
+C: merged fp16,beam4,23,>20,20,290.9183040001153
+C: merged fp16,beam4,24,>20,21,292.03412699985165
+C: merged fp16,beam4,16,15–20,15,248.50456999979542
+C: merged fp16,beam4,6,≤6,12,184.3619859998853
+C: merged fp16,beam4,18,15–20,25,372.65862000003835
+C: merged fp16,beam4,21,>20,23,388.39251000013064
+C: merged fp16,beam4,6,≤6,10,147.34759800012398
+C: merged fp16,beam4,7,7–10,7,109.43449299998065
+C: merged fp16,beam4,15,15–20,13,221.79485099991325
+C: merged fp16,beam4,15,15–20,12,169.39622900008544
+C: merged fp16,beam4,20,15–20,19,266.05665600004613
+C: merged fp16,beam4,13,11–14,9,150.57256700015387
+C: merged fp16,beam4,11,11–14,9,142.76774500012834
+C: merged fp16,beam4,12,11–14,14,208.55464700002813
+C: merged fp16,beam4,11,11–14,10,137.74505900005352
+C: merged fp16,beam4,9,7–10,16,222.0652030000565
+C: merged fp16,beam4,16,15–20,13,189.73110000001725
+C: merged fp16,beam4,25,>20,17,302.3324550001689
+C: merged fp16,beam4,5,≤6,9,130.95765399998527
+C: merged fp16,beam4,22,>20,26,371.6302899999846
+C: merged fp16,beam4,10,7–10,12,177.484080999875
+C: merged fp16,beam4,11,11–14,17,281.1459769998237
+C: merged fp16,beam4,3,≤6,8,142.27353599994785
+C: merged fp16,beam4,11,11–14,13,187.17216899995037
+C: merged fp16,beam4,21,>20,29,415.9708520001004
+C: merged fp16,beam4,13,11–14,12,213.39720300011322

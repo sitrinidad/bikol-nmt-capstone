@@ -1,0 +1,525 @@
+{
+ "signatures": {
+  "BLEU": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+  "chrF++": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+  "TER": "nrefs:1|case:lc|tok:tercom|norm:no|punct:yes|asian:no|version:2.6.0"
+ },
+ "boot_n": 300,
+ "test_metrics": [
+  {
+   "direction": "bcl_North → eng",
+   "system": "Zero-shot NLLB-600M",
+   "n": 235,
+   "BLEU": 11.1987160035106,
+   "chrF++": 31.804524955385432,
+   "TER": 87.5898105813194,
+   "BLEU lo": 8.569605889844729,
+   "BLEU hi": 13.677769972824876,
+   "chrF++ lo": 29.33977059433239,
+   "chrF++ hi": 34.60982169300759,
+   "TER lo": 83.27903136650808,
+   "TER hi": 91.20612859038778
+  },
+  {
+   "direction": "bcl_North → eng",
+   "system": "LoRA fine-tuned",
+   "n": 235,
+   "BLEU": 29.19525830414138,
+   "chrF++": 46.59212852524273,
+   "TER": 59.04637491835402,
+   "BLEU lo": 25.785717881570744,
+   "BLEU hi": 32.84759877700066,
+   "chrF++ lo": 43.643603228658066,
+   "chrF++ hi": 49.9864651008017,
+   "TER lo": 55.04160429622999,
+   "TER hi": 63.40903877036017
+  },
+  {
+   "direction": "eng → bcl_North",
+   "system": "Zero-shot NLLB-600M",
+   "n": 235,
+   "BLEU": 3.53737169787476,
+   "chrF++": 28.17183597556136,
+   "TER": 99.2467043314501,
+   "BLEU lo": 1.990216785532605,
+   "BLEU hi": 5.0887732281616165,
+   "chrF++ lo": 26.67685682414736,
+   "chrF++ hi": 29.811227827619838,
+   "TER lo": 95.17239347835692,
+   "TER hi": 102.69629884492504
+  },
+  {
+   "direction": "eng → bcl_North",
+   "system": "LoRA fine-tuned",
+   "n": 235,
+   "BLEU": 21.305835287807632,
+   "chrF++": 46.83433433809681,
+   "TER": 63.52793471437539,
+   "BLEU lo": 18.482521828680824,
+   "BLEU hi": 24.27843335211642,
+   "chrF++ lo": 44.686015300540724,
+   "chrF++ hi": 49.180261905270015,
+   "TER lo": 60.05979772884017,
+   "TER hi": 66.77639985607797
+  },
+  {
+   "direction": "bcl_South → eng",
+   "system": "Zero-shot NLLB-600M",
+   "n": 235,
+   "BLEU": 15.668044864486507,
+   "chrF++": 36.57746951255319,
+   "TER": 87.06727629000653,
+   "BLEU lo": 12.561752412503175,
+   "BLEU hi": 19.09410833116495,
+   "chrF++ lo": 33.85046717563563,
+   "chrF++ hi": 39.33668370781142,
+   "TER lo": 77.41784954547802,
+   "TER hi": 99.39350702001887
+  },
+  {
+   "direction": "bcl_South → eng",
+   "system": "LoRA fine-tuned",
+   "n": 235,
+   "BLEU": 30.018309556289402,
+   "chrF++": 47.342764063120754,
+   "TER": 56.23775310254735,
+   "BLEU lo": 26.2267748521649,
+   "BLEU hi": 33.52841437338795,
+   "chrF++ lo": 44.44121686665511,
+   "chrF++ hi": 50.13770104537034,
+   "TER lo": 52.50042146058788,
+   "TER hi": 59.82537218678567
+  },
+  {
+   "direction": "eng → bcl_South",
+   "system": "Zero-shot NLLB-600M",
+   "n": 235,
+   "BLEU": 1.8180047725144404,
+   "chrF++": 24.778960160251152,
+   "TER": 100.66788099574985,
+   "BLEU lo": 0.9934654693822754,
+   "BLEU hi": 2.6755834508290683,
+   "chrF++ lo": 23.63270042885034,
+   "chrF++ hi": 25.77697559981941,
+   "TER lo": 97.94249812085361,
+   "TER hi": 103.91455944330099
+  },
+  {
+   "direction": "eng → bcl_South",
+   "system": "LoRA fine-tuned",
+   "n": 235,
+   "BLEU": 19.59961129074996,
+   "chrF++": 45.320526889909964,
+   "TER": 65.2701882210079,
+   "BLEU lo": 16.58144886572405,
+   "BLEU hi": 23.047776825746666,
+   "chrF++ lo": 43.11137935769386,
+   "chrF++ hi": 47.73079284621508,
+   "TER lo": 61.669622095712725,
+   "TER hi": 68.45748753715719
+  },
+  {
+   "direction": "bcl_South → bcl_North",
+   "system": "Zero-shot NLLB-600M",
+   "n": 235,
+   "BLEU": 3.216934826251081,
+   "chrF++": 27.316690355466623,
+   "TER": 97.74011299435028,
+   "BLEU lo": 1.9128065199477824,
+   "BLEU hi": 4.509374017129825,
+   "chrF++ lo": 25.878329500544844,
+   "chrF++ hi": 28.93297919442178,
+   "TER lo": 94.66293764847919,
+   "TER hi": 101.34461196926274
+  },
+  {
+   "direction": "bcl_South → bcl_North",
+   "system": "LoRA fine-tuned",
+   "n": 235,
+   "BLEU": 26.65594102612924,
+   "chrF++": 50.997733704294546,
+   "TER": 57.37602008788449,
+   "BLEU lo": 23.282949252189407,
+   "BLEU hi": 30.218494191330702,
+   "chrF++ lo": 48.7339531432077,
+   "chrF++ hi": 53.490706194500234,
+   "TER lo": 53.353312302839115,
+   "TER hi": 60.860175857193354
+  },
+  {
+   "direction": "bcl_North → bcl_South",
+   "system": "Zero-shot NLLB-600M",
+   "n": 235,
+   "BLEU": 1.513266911899392,
+   "chrF++": 23.611086204629643,
+   "TER": 103.82513661202186,
+   "BLEU lo": 0.978364857786677,
+   "BLEU hi": 2.4460828787524544,
+   "chrF++ lo": 22.663146153934086,
+   "chrF++ hi": 24.83531408780709,
+   "TER lo": 100.32135966945981,
+   "TER hi": 107.28477403784153
+  },
+  {
+   "direction": "bcl_North → bcl_South",
+   "system": "LoRA fine-tuned",
+   "n": 235,
+   "BLEU": 23.938311226710095,
+   "chrF++": 50.03752433591826,
+   "TER": 59.077109896782034,
+   "BLEU lo": 20.959937027726742,
+   "BLEU hi": 26.986547238153477,
+   "chrF++ lo": 47.831500770974,
+   "chrF++ hi": 52.346292788933646,
+   "TER lo": 55.74846269905789,
+   "TER hi": 63.11627443299666
+  }
+ ],
+ "copy_baseline": [
+  {
+   "direction": "bcl_South → bcl_North",
+   "system": "Copy source (no translation)",
+   "n": 235,
+   "BLEU": 18.00935018305677,
+   "chrF++": 47.307271432361695,
+   "TER": 67.04331450094162
+  },
+  {
+   "direction": "bcl_North → bcl_South",
+   "system": "Copy source (no translation)",
+   "n": 235,
+   "BLEU": 18.13269105630924,
+   "chrF++": 46.95096997011349,
+   "TER": 64.84517304189436
+  }
+ ],
+ "benchmark": [
+  {
+   "Direction": "bcl_North → eng",
+   "BLEU zero-shot": 11.1987160035106,
+   "BLEU LoRA": 29.19525830414138,
+   "ΔBLEU": 17.99654230063078,
+   "p(BLEU)": 0.0,
+   "chrF++ zero-shot": 31.804524955385432,
+   "chrF++ LoRA": 46.59212852524273,
+   "ΔchrF++": 14.787603569857296,
+   "p(chrF++)": 0.0,
+   "TER zero-shot": 87.5898105813194,
+   "TER LoRA": 59.04637491835402,
+   "ΔTER": -28.54343566296538,
+   "p(TER)": 0.0,
+   "val BLEU (LoRA)": 27.41,
+   "val chrF++ (LoRA)": 45.04,
+   "val TER (LoRA)": 63.79
+  },
+  {
+   "Direction": "eng → bcl_North",
+   "BLEU zero-shot": 3.53737169787476,
+   "BLEU LoRA": 21.305835287807632,
+   "ΔBLEU": 17.76846358993287,
+   "p(BLEU)": 0.0,
+   "chrF++ zero-shot": 28.17183597556136,
+   "chrF++ LoRA": 46.83433433809681,
+   "ΔchrF++": 18.662498362535448,
+   "p(chrF++)": 0.0,
+   "TER zero-shot": 99.2467043314501,
+   "TER LoRA": 63.52793471437539,
+   "ΔTER": -35.71876961707471,
+   "p(TER)": 0.0,
+   "val BLEU (LoRA)": 21.47,
+   "val chrF++ (LoRA)": 45.88,
+   "val TER (LoRA)": 67.2
+  },
+  {
+   "Direction": "bcl_South → eng",
+   "BLEU zero-shot": 15.668044864486507,
+   "BLEU LoRA": 30.018309556289402,
+   "ΔBLEU": 14.350264691802895,
+   "p(BLEU)": 0.0,
+   "chrF++ zero-shot": 36.57746951255319,
+   "chrF++ LoRA": 47.342764063120754,
+   "ΔchrF++": 10.76529455056756,
+   "p(chrF++)": 0.0,
+   "TER zero-shot": 87.06727629000653,
+   "TER LoRA": 56.23775310254735,
+   "ΔTER": -30.82952318745918,
+   "p(TER)": 0.0,
+   "val BLEU (LoRA)": 27.23,
+   "val chrF++ (LoRA)": 46.76,
+   "val TER (LoRA)": 59.61
+  },
+  {
+   "Direction": "eng → bcl_South",
+   "BLEU zero-shot": 1.8180047725144404,
+   "BLEU LoRA": 19.59961129074996,
+   "ΔBLEU": 17.781606518235517,
+   "p(BLEU)": 0.0,
+   "chrF++ zero-shot": 24.778960160251152,
+   "chrF++ LoRA": 45.320526889909964,
+   "ΔchrF++": 20.54156672965881,
+   "p(chrF++)": 0.0,
+   "TER zero-shot": 100.66788099574985,
+   "TER LoRA": 65.2701882210079,
+   "ΔTER": -35.397692774741955,
+   "p(TER)": 0.0,
+   "val BLEU (LoRA)": 21.33,
+   "val chrF++ (LoRA)": 45.14,
+   "val TER (LoRA)": 64.52
+  },
+  {
+   "Direction": "bcl_South → bcl_North",
+   "BLEU zero-shot": 3.216934826251081,
+   "BLEU LoRA": 26.65594102612924,
+   "ΔBLEU": 23.43900619987816,
+   "p(BLEU)": 0.0,
+   "chrF++ zero-shot": 27.316690355466623,
+   "chrF++ LoRA": 50.997733704294546,
+   "ΔchrF++": 23.681043348827924,
+   "p(chrF++)": 0.0,
+   "TER zero-shot": 97.74011299435028,
+   "TER LoRA": 57.37602008788449,
+   "ΔTER": -40.36409290646579,
+   "p(TER)": 0.0,
+   "val BLEU (LoRA)": 25.16,
+   "val chrF++ (LoRA)": 50.29,
+   "val TER (LoRA)": 60.99
+  },
+  {
+   "Direction": "bcl_North → bcl_South",
+   "BLEU zero-shot": 1.513266911899392,
+   "BLEU LoRA": 23.938311226710095,
+   "ΔBLEU": 22.4250443148107,
+   "p(BLEU)": 0.0,
+   "chrF++ zero-shot": 23.611086204629643,
+   "chrF++ LoRA": 50.03752433591826,
+   "ΔchrF++": 26.42643813128862,
+   "p(chrF++)": 0.0,
+   "TER zero-shot": 103.82513661202186,
+   "TER LoRA": 59.077109896782034,
+   "ΔTER": -44.74802671523983,
+   "p(TER)": 0.0,
+   "val BLEU (LoRA)": 24.23,
+   "val chrF++ (LoRA)": 47.94,
+   "val TER (LoRA)": 62.93
+  },
+  {
+   "Direction": "MEAN of 6 directions",
+   "BLEU zero-shot": 6.158723179422798,
+   "BLEU LoRA": 25.118877781971282,
+   "ΔBLEU": 18.96015460254849,
+   "p(BLEU)": null,
+   "chrF++ zero-shot": 28.7100945273079,
+   "chrF++ LoRA": 47.854168642763845,
+   "ΔchrF++": 19.144074115455943,
+   "p(chrF++)": null,
+   "TER zero-shot": 96.02282030081632,
+   "TER LoRA": 60.0892301568252,
+   "ΔTER": -35.93359014399115,
+   "p(TER)": null,
+   "val BLEU (LoRA)": 24.471666666666664,
+   "val chrF++ (LoRA)": 46.84166666666666,
+   "val TER (LoRA)": 63.17333333333334
+  },
+  {
+   "Direction": "mean: → English (Bikol→eng)",
+   "BLEU zero-shot": 13.433380433998554,
+   "BLEU LoRA": 29.606783930215393,
+   "ΔBLEU": 16.173403496216835,
+   "p(BLEU)": null,
+   "chrF++ zero-shot": 34.19099723396931,
+   "chrF++ LoRA": 46.96744629418174,
+   "ΔchrF++": 12.776449060212428,
+   "p(chrF++)": null,
+   "TER zero-shot": 87.32854343566297,
+   "TER LoRA": 57.64206401045068,
+   "ΔTER": -29.68647942521228,
+   "p(TER)": null,
+   "val BLEU (LoRA)": 27.32,
+   "val chrF++ (LoRA)": 45.9,
+   "val TER (LoRA)": 61.7
+  },
+  {
+   "Direction": "mean: → Bikol (eng→Bikol)",
+   "BLEU zero-shot": 2.6776882351946,
+   "BLEU LoRA": 20.452723289278794,
+   "ΔBLEU": 17.775035054084192,
+   "p(BLEU)": null,
+   "chrF++ zero-shot": 26.475398067906255,
+   "chrF++ LoRA": 46.07743061400339,
+   "ΔchrF++": 19.602032546097128,
+   "p(chrF++)": null,
+   "TER zero-shot": 99.95729266359999,
+   "TER LoRA": 64.39906146769164,
+   "ΔTER": -35.558231195908334,
+   "p(TER)": null,
+   "val BLEU (LoRA)": 21.4,
+   "val chrF++ (LoRA)": 45.510000000000005,
+   "val TER (LoRA)": 65.86
+  },
+  {
+   "Direction": "mean: Dialect↔dialect",
+   "BLEU zero-shot": 2.3651008690752366,
+   "BLEU LoRA": 25.29712612641967,
+   "ΔBLEU": 22.93202525734443,
+   "p(BLEU)": null,
+   "chrF++ zero-shot": 25.46388828004813,
+   "chrF++ LoRA": 50.517629020106405,
+   "ΔchrF++": 25.053740740058274,
+   "p(chrF++)": null,
+   "TER zero-shot": 100.78262480318608,
+   "TER LoRA": 58.226564992333266,
+   "ΔTER": -42.556059810852815,
+   "p(TER)": null,
+   "val BLEU (LoRA)": 24.695,
+   "val chrF++ (LoRA)": 49.114999999999995,
+   "val TER (LoRA)": 61.96
+  }
+ ],
+ "error_summary": [
+  {
+   "category": "Untranslated tokens (OOV)",
+   "sentences": 7,
+   "%": 14.0
+  },
+  {
+   "category": "Morphological / affix error",
+   "sentences": 5,
+   "%": 10.0
+  },
+  {
+   "category": "Word order / syntactic discrepancy",
+   "sentences": 4,
+   "%": 8.0
+  },
+  {
+   "category": "Omission / addition",
+   "sentences": 2,
+   "%": 4.0
+  },
+  {
+   "category": "Lexical / wrong word choice",
+   "sentences": 32,
+   "%": 64.0
+  },
+  {
+   "category": "Acceptable alternative (not a real error)",
+   "sentences": 0,
+   "%": 0.0
+  }
+ ],
+ "error_category_source": "AUTOMATIC PRE-TAG ONLY — NOT YET REVIEWED BY A HUMAN",
+ "latency_summary": [
+  {
+   "variant": "B: merged fp32 + AMP (API default)",
+   "mode": "beam4",
+   "n": 200,
+   "mean_ms": 417.24650488999146,
+   "median_ms": 372.73848300003465,
+   "p95_ms": 738.669824699798,
+   "pct_under_target": 28.000000000000004,
+   "ms_per_out_token": 27.559214325626915
+  },
+  {
+   "variant": "B: merged fp32 + AMP (API default)",
+   "mode": "greedy",
+   "n": 200,
+   "mean_ms": 369.2423649650073,
+   "median_ms": 332.4528095000687,
+   "p95_ms": 649.5319221000613,
+   "pct_under_target": 40.5,
+   "ms_per_out_token": 24.05487719641741
+  },
+  {
+   "variant": "C: merged fp16",
+   "mode": "beam4",
+   "n": 200,
+   "mean_ms": 245.88385775501138,
+   "median_ms": 223.40280000014445,
+   "p95_ms": 416.7855959999997,
+   "pct_under_target": 73.0,
+   "ms_per_out_token": 16.2192518308055
+  },
+  {
+   "variant": "C: merged fp16",
+   "mode": "greedy",
+   "n": 200,
+   "mean_ms": 210.99593883500123,
+   "median_ms": 185.30755749998207,
+   "p95_ms": 396.7785743499006,
+   "pct_under_target": 83.0,
+   "ms_per_out_token": 13.754624435136977
+  }
+ ],
+ "adapter_meta": {
+  "base_model": "facebook/nllb-200-distilled-600M",
+  "run_name": "multi",
+  "directions": [
+   [
+    "bcl_North",
+    "eng"
+   ],
+   [
+    "eng",
+    "bcl_North"
+   ],
+   [
+    "bcl_South",
+    "eng"
+   ],
+   [
+    "eng",
+    "bcl_South"
+   ],
+   [
+    "bcl_South",
+    "bcl_North"
+   ],
+   [
+    "bcl_North",
+    "bcl_South"
+   ]
+  ],
+  "language_code_map": {
+   "eng": "eng_Latn",
+   "bcl_North": "tgl_Latn",
+   "bcl_South": "war_Latn"
+  },
+  "max_len": 64,
+  "lora": {
+   "r": 32,
+   "alpha": 64,
+   "dropout": 0.2,
+   "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "out_proj",
+    "fc1",
+    "fc2"
+   ]
+  },
+  "training": {
+   "lr": 0.0002,
+   "epochs": 30,
+   "batch_size": 16,
+   "seed": 42,
+   "best_epoch": 18,
+   "best_val_BLEU": 23.34961733514427,
+   "label_smoothing": 0.15,
+   "src_token_dropout": 0.1,
+   "weight_decay": 0.05,
+   "lora_dropout": 0.2,
+   "best_val_loss": 2.1338260173797607
+  }
+ },
+ "facts": [
+  "Averaged over the six directions, fine-tuning raised BLEU from 6.2 to 25.1, chrF++ from 28.7 to 47.9, and lowered TER from 96.0 to 60.1.",
+  "Best direction by BLEU: bcl_South → eng (30.0); weakest: eng → bcl_South (19.6).",
+  "The paired bootstrap found LoRA better than zero-shot in 18 of 18 direction×metric comparisons at p < 0.05.",
+  "Mean test BLEU 25.1 vs. mean validation BLEU 24.5 (difference +0.6); each direction's 95 % CI half-width is about ±3–4 BLEU with 235 sentences, so differences smaller than that are not reliable.",
+  "bcl_South → bcl_North: LoRA chrF++ 51.0 vs. 47.3 for simply copying the source (BLEU 26.7 vs. 18.0).",
+  "bcl_North → bcl_South: LoRA chrF++ 50.0 vs. 47.0 for simply copying the source (BLEU 23.9 vs. 18.1).",
+  "Latency: B/beam4 417 ms mean (p95 739); B/greedy 369 ms mean (p95 650); C/beam4 246 ms mean (p95 417); C/greedy 211 ms mean (p95 397). Configurations under the 300 ms mean target: C/beam4, C/greedy.",
+  "Error categories (AUTOMATIC PRE-TAG ONLY — NOT YET REVIEWED BY A HUMAN): Untranslated tokens (OOV) 7; Morphological / affix error 5; Word order / syntactic discrepancy 4; Omission / addition 2; Lexical / wrong word choice 32; Acceptable alternative (not a real error) 0."
+ ]
+}

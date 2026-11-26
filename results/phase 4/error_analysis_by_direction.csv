@@ -1,0 +1,7 @@
+category,bcl_North → bcl_South,bcl_North → eng,bcl_South → bcl_North,bcl_South → eng,eng → bcl_North,eng → bcl_South
+Untranslated tokens (OOV),2,0,5,0,0,0
+Morphological / affix error,1,1,0,0,1,2
+Word order / syntactic discrepancy,0,0,0,0,2,2
+Omission / addition,0,1,0,1,0,0
+Lexical / wrong word choice,5,7,3,7,6,4
+Acceptable alternative (not a real error),0,0,0,0,0,0

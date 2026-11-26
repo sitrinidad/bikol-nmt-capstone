@@ -1,0 +1,7 @@
+category,sentences,%
+Untranslated tokens (OOV),7,14.0
+Morphological / affix error,5,10.0
+Word order / syntactic discrepancy,4,8.0
+Omission / addition,2,4.0
+Lexical / wrong word choice,32,64.0
+Acceptable alternative (not a real error),0,0.0
