@@ -1,1 +1,0 @@
-Metric tables and latency log go here.
