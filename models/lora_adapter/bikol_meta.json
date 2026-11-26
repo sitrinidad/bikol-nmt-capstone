@@ -1,0 +1,62 @@
+{
+  "base_model": "facebook/nllb-200-distilled-600M",
+  "run_name": "multi",
+  "directions": [
+    [
+      "bcl_North",
+      "eng"
+    ],
+    [
+      "eng",
+      "bcl_North"
+    ],
+    [
+      "bcl_South",
+      "eng"
+    ],
+    [
+      "eng",
+      "bcl_South"
+    ],
+    [
+      "bcl_South",
+      "bcl_North"
+    ],
+    [
+      "bcl_North",
+      "bcl_South"
+    ]
+  ],
+  "language_code_map": {
+    "eng": "eng_Latn",
+    "bcl_North": "tgl_Latn",
+    "bcl_South": "war_Latn"
+  },
+  "max_len": 64,
+  "lora": {
+    "r": 32,
+    "alpha": 64,
+    "dropout": 0.2,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "out_proj",
+      "fc1",
+      "fc2"
+    ]
+  },
+  "training": {
+    "lr": 0.0002,
+    "epochs": 30,
+    "batch_size": 16,
+    "seed": 42,
+    "best_epoch": 18,
+    "best_val_BLEU": 23.34961733514427,
+    "label_smoothing": 0.15,
+    "src_token_dropout": 0.1,
+    "weight_decay": 0.05,
+    "lora_dropout": 0.2,
+    "best_val_loss": 2.1338260173797607
+  }
+}
