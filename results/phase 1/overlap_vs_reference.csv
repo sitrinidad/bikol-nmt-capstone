@@ -1,0 +1,13 @@
+our_language,reference,ref_min_freq,our_types,ref_types,shared_types,type_overlap_%,token_coverage_%,jaccard
+bcl_North,Central Bikol (bcl wiki),1,2566,188993,1403,54.677,80.208,0.007
+bcl_North,Central Bikol (bcl wiki),3,2566,53096,1185,46.181,75.706,0.022
+bcl_North,Tagalog (tl wiki),1,2566,383597,1269,49.454,75.58,0.003
+bcl_North,Tagalog (tl wiki),3,2566,116680,1130,44.037,71.679,0.01
+bcl_South,Central Bikol (bcl wiki),1,2608,188993,1683,64.532,88.25,0.009
+bcl_South,Central Bikol (bcl wiki),3,2608,53096,1446,55.445,84.823,0.027
+bcl_South,Tagalog (tl wiki),1,2608,383597,1402,53.758,78.739,0.004
+bcl_South,Tagalog (tl wiki),3,2608,116680,1241,47.584,74.02,0.011
+eng (control),Central Bikol (bcl wiki),1,2343,188993,1969,84.038,95.092,0.01
+eng (control),Central Bikol (bcl wiki),3,2343,53096,1578,67.35,89.006,0.029
+eng (control),Tagalog (tl wiki),1,2343,383597,2146,91.592,97.666,0.006
+eng (control),Tagalog (tl wiki),3,2343,116680,1921,81.989,94.418,0.016

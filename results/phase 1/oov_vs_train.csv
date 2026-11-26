@@ -1,0 +1,7 @@
+lang,split,tokens,OOV_token_%,types,OOV_type_%
+eng,val,1537,17.83,734,35.29
+eng,test,1529,15.57,697,32.42
+bcl_South,val,1695,18.88,722,41.83
+bcl_South,test,1645,16.9,689,39.04
+bcl_North,val,1612,20.16,707,43.85
+bcl_North,test,1591,17.1,673,39.23

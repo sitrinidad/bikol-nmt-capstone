@@ -1,0 +1,77 @@
+{
+  "rows_raw": 1597,
+  "rows_final": 1569,
+  "cleaning_steps": {
+    "rows_raw": 1597,
+    "rows_dropped_fully_blank": 27,
+    "2.2 generic normalization": {
+      "eng": 40,
+      "bcl_South": 20,
+      "bcl_North": 17
+    },
+    "rows_dropped_missing_side": 0,
+    "2.3 diacritic standardization": {
+      "eng": 0,
+      "bcl_South": 12,
+      "bcl_North": 0
+    },
+    "2.5 spelling-variant map": {
+      "eng": 0,
+      "bcl_South": 29,
+      "bcl_North": 5
+    },
+    "rows_dropped_duplicates": 1
+  },
+  "split_sizes": {
+    "train": 1098,
+    "val": 236,
+    "test": 235
+  },
+  "n_leakage_groups": 1550,
+  "near_dup_threshold": 0.9,
+  "seed": 42,
+  "ttr": {
+    "eng": {
+      "tokens": 9942.0,
+      "types": 2343.0,
+      "TTR": 0.236,
+      "root_TTR": 23.498,
+      "MATTR_500": 0.547
+    },
+    "bcl_South": {
+      "tokens": 10766.0,
+      "types": 2608.0,
+      "TTR": 0.242,
+      "root_TTR": 25.135,
+      "MATTR_500": 0.482
+    },
+    "bcl_North": {
+      "tokens": 10307.0,
+      "types": 2566.0,
+      "TTR": 0.249,
+      "root_TTR": 25.275,
+      "MATTR_500": 0.49
+    }
+  },
+  "settings": {
+    "strip_bikol_diacritics": true,
+    "variant_map": {
+      "bcl_South": {
+        "marhay": "maray",
+        "marahay": "maray",
+        "paano": "pano",
+        "papano": "pano",
+        "biyahe": "byahe",
+        "al'daw": "aldaw",
+        "novembr": "november",
+        "dretso": "deretso",
+        "pad-padon": "padpadon",
+        "mag-tukaw": "magtukaw"
+      },
+      "bcl_North": {
+        "niyo": "ninyo",
+        "madiyag": "madyag"
+      }
+    }
+  }
+}
