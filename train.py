@@ -34,6 +34,28 @@ TARGET_MODULES = ["q_proj", "k_proj", "v_proj", "out_proj", "fc1", "fc2"]
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 
+def ensure_torchao_ok(min_version="0.16.0"):
+    """Colab ships an old torchao (0.10) that makes peft raise ImportError. LoRA does not need torchao,
+    so we remove it instead of asking the user to do it by hand."""
+    import importlib, importlib.metadata as md, subprocess, sys
+    from packaging import version
+    try:
+        v = md.version("torchao")
+    except md.PackageNotFoundError:
+        return
+    if version.parse(v) < version.parse(min_version):
+        print(f"torchao {v} is incompatible with this peft version -> uninstalling it (not needed for LoRA)")
+        subprocess.run([sys.executable, "-m", "pip", "uninstall", "-y", "torchao"], check=False, capture_output=True)
+        importlib.invalidate_caches()
+        for k in [k for k in sys.modules if k == "torchao" or k.startswith("torchao.")]:
+            del sys.modules[k]
+        try:
+            import peft.import_utils as iu
+            iu.is_torchao_available.cache_clear()
+        except Exception:
+            pass
+
+
 def get_args():
     p = argparse.ArgumentParser()
     p.add_argument("--data_dir", default="data")
@@ -161,6 +183,7 @@ def main():
             return (loss, outputs) if return_outputs else loss
 
     # base model stays frozen (fp32); only the LoRA weights train, fp16 comes from AMP
+    ensure_torchao_ok()  # must run before peft builds the adapter
     base = AutoModelForSeq2SeqLM.from_pretrained(MODEL_NAME)
     cfg = LoraConfig(r=a.r, lora_alpha=a.alpha, lora_dropout=a.lora_dropout, target_modules=TARGET_MODULES,
                      bias="none", task_type=TaskType.SEQ_2_SEQ_LM)
