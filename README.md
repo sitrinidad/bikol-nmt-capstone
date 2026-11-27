@@ -47,7 +47,7 @@ bikol-nmt-capstone/
 | `data/train.csv`, `val.csv`, `test.csv` (and `.json`) | 70/15/15 split files (1,098 / 236 / 235 rows) |
 | `data/directional/` | one JSONL file per split and direction; `train.py` reads these |
 
-The corpus has no personal information. The cleaning steps, the leakage check and the vocabulary analysis are in the Phase 1 notebook (`notebooks/Bikol_NMT_Phase1_Phase2_v4_1.ipynb`) and in the report.
+The corpus has no personal information. The cleaning steps, the leakage check and the vocabulary analysis are in the Phase 1 notebook (notebooks/Bikol_NMT_Phase1_Phase2_v4.ipynb) and in the report.
 
 ## 2. Train the model (`train.py`)
 
