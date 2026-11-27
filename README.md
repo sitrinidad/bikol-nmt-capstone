@@ -64,6 +64,7 @@ Needs a GPU. On Google Colab choose **Runtime → Change runtime type → T4 GPU
 If you run this a second time in the same Colab session, the clone fails because the folder already exists. Delete it first with `%cd /content` and `!rm -rf bikol-nmt-capstone`, or start a new runtime.
 
 - Settings: LoRA r=32, alpha=64, dropout 0.2, learning rate 2e-4, seed 42, early stopping on validation BLEU (patience 5). They can be changed with command-line flags, for example `python train.py --r 16 --alpha 32`.
+- Re-running train.py gives a similar but not identical adapter (our re-run: stopped at epoch 13, best epoch 8, mean validation BLEU 23.56). All results in the report use the adapter trained in the Phase 2 notebook, which is stored in the GitHub Release.
 - The script reads only the train and validation files. The test set is not used in training.
 - The validation BLEU printed during training (and saved as `best_val_BLEU` in `bikol_meta.json`) uses greedy decoding, so it can differ from the beam-4 scores in the report.
 - Output: `models/lora_adapter/` (adapter, tokenizer, `bikol_meta.json`), `results/loss_history.csv`, `results/figures/loss_curves.png`.
