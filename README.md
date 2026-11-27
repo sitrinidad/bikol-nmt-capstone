@@ -57,6 +57,7 @@ Needs a GPU. On Google Colab choose **Runtime → Change runtime type → T4 GPU
 !git clone https://github.com/sitrinidad/bikol-nmt-capstone
 %cd bikol-nmt-capstone
 !pip install -q transformers peft accelerate sacrebleu sentencepiece pandas matplotlib
+!pip -q uninstall -y torchao
 !python train.py
 ```
 
