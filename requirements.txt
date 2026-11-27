@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+pydantic
+PyMySQL
+torch
+transformers
+peft
+sentencepiece
+accelerate
+sacrebleu
+pandas
+numpy
+matplotlib
+pytest
+httpx
