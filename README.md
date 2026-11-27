@@ -1,6 +1,6 @@
 # Bikolé: Low-Resource Neural Machine Translation for Bikol Dialects
 
-> "Naligis Here, Nagilis There—Bikolé Gets You Everywhere!"
+*"Naligis Here, Nagilis There—Bikolé Gets You Everywhere!"*
 
 CSTRACKC2 (Data Mining) capstone. English ↔ Virac (Southern Catanduanes Bikol) ↔ Pandan (Northern Catanduanes Bikol) translation, using `facebook/nllb-200-distilled-600M` fine-tuned with one LoRA adapter for six directions. The project has four parts: the corpus, the training script, the evaluation, and a web app with an API.
 
@@ -9,9 +9,9 @@ CSTRACKC2 (Data Mining) capstone. English ↔ Virac (Southern Catanduanes Bikol)
 1. **Data** — `data/` holds the cleaned corpus and the 70/15/15 split (seed 42, no leakage).
 2. **Train** — run `train.py` (Section 2). Needs a GPU. Tested on a Colab T4.
 3. **Evaluate** — run `notebooks/Bikol_NMT_Phase4_Evaluation.ipynb`. Metric tables are saved in `results/`.
-4. **Serve** — start the API and web page (Sections 4–7). Needs MySQL.
+4. **Serve** — start the API and web page (Sections 4–7). Needs MySQL and the trained adapter (Section 5).
 
-## Repository structure
+### Repository structure
 
 ```
 bikol-nmt-capstone/
@@ -29,7 +29,8 @@ bikol-nmt-capstone/
 │   └── nmt/            model loading, inference, confidence score, input cleaning
 ├── database/           MySQL feedback storage (database and table created automatically)
 ├── frontend/           HTML + CSS + JavaScript (Fetch API) + Lucide icons
-├── models/lora_adapter/  trained LoRA adapter, tokenizer, bikol_meta.json
+├── models/lora_adapter/  adapter_config.json, bikol_meta.json, tokenizer_config.json, model card
+│                         (adapter_model.safetensors and tokenizer.json come from the GitHub Releases, Section 5)
 ├── data/               corpus and split files (Section 1)
 ├── results/            metric tables, latency log, error analysis, figures
 ├── notebooks/          Phase 1+2 (corpus, training) and Phase 4 (evaluation) notebooks
@@ -59,8 +60,11 @@ Needs a GPU. On Google Colab choose **Runtime → Change runtime type → T4 GPU
 !python train.py
 ```
 
+If you run this a second time in the same Colab session, the clone fails because the folder already exists. Delete it first with `%cd /content` and `!rm -rf bikol-nmt-capstone`, or start a new runtime.
+
 - Settings: LoRA r=32, alpha=64, dropout 0.2, learning rate 2e-4, seed 42, early stopping on validation BLEU (patience 5). They can be changed with command-line flags, for example `python train.py --r 16 --alpha 32`.
-- The script reads only the train and validation files. The test set is **not** used in training.
+- The script reads only the train and validation files. The test set is not used in training.
+- The validation BLEU printed during training (and saved as `best_val_BLEU` in `bikol_meta.json`) uses greedy decoding, so it can differ from the beam-4 scores in the report.
 - Output: `models/lora_adapter/` (adapter, tokenizer, `bikol_meta.json`), `results/loss_history.csv`, `results/figures/loss_curves.png`.
 
 ## 3. Evaluate
@@ -79,13 +83,16 @@ Main files in `results/`: `benchmark_table.csv`, `test_metrics_by_direction.csv`
 
 ## 5. Put the trained model in place
 
-The adapter is in `models/lora_adapter/` and also in the GitHub Release: **[RELEASE OR HUGGING FACE LINK]**. This file must exist:
+The two large adapter files are not stored in the repository folder. Download them from the GitHub Releases and put them in `models/lora_adapter/`, next to the files that are already there:
 
-```
-models/lora_adapter/bikol_meta.json
-```
+| File | Download from |
+|---|---|
+| `adapter_model.safetensors` (69.3 MB) | [Release v1.0.1](https://github.com/sitrinidad/bikol-nmt-capstone/releases/tag/v1.0.1) |
+| `tokenizer.json` | [Release v1.0.2](https://github.com/sitrinidad/bikol-nmt-capstone/releases/tag/v1.0.2) |
 
-If you trained it yourself, `train.py` already saves the adapter there.
+After this step, `models/lora_adapter/` must contain `adapter_config.json`, `adapter_model.safetensors`, `bikol_meta.json`, `tokenizer.json` and `tokenizer_config.json`.
+
+If you trained the model yourself, `train.py` already saves all of these there, so you can skip the download.
 
 **Faster model (recommended for the 300 ms target).** The default setup uses fp32 and is slower (mean 417 ms in our test). The merged fp16 model had a mean of 246 ms on a Colab T4. To use it, put the merged fp16 model folder in `models/` and set `BIKOLE_MODEL_DIR` in `.env` (Section 8).
 
@@ -137,10 +144,10 @@ cp .env.example .env        # then edit .env if your MySQL has a password
 uvicorn backend.main:app --reload
 ```
 
-Then open <http://127.0.0.1:8000> in your browser.
+Then open `http://127.0.0.1:8000` in your browser.
 
 - The first start downloads the base model and loads it (a few minutes). The page shows "Loading the translation model…" and changes to "Model ready" when it can translate.
-- API docs (try the endpoints): <http://127.0.0.1:8000/docs>
+- API docs (try the endpoints): `http://127.0.0.1:8000/docs`
 - Stop the server with `Ctrl + C`. Next time: activate the venv, start MySQL, run `uvicorn backend.main:app --reload`.
 
 ### Run the tests
@@ -151,13 +158,13 @@ MySQL must be running. The tests use a separate `bikole_test` database that they
 python -m pytest
 ```
 
-## How translation works
+### How translation works
 
 - Every sentence is translated by the model. Any English, Virac or Pandan sentence can be typed, whether or not it appears in the corpus.
 - Text with several sentences is translated sentence by sentence. Line breaks are kept.
 - NLLB-200 has no Bikol language code, so each language borrows its own existing tag (`eng_Latn` for English, `tgl_Latn` for Pandan, `war_Latn` for Virac). The adapter learns to give these tags a new meaning. This is a technical device, not a claim that Pandan is Tagalog or Virac is Waray.
 
-## Website features
+### Website features
 
 - Side-by-side translation with language dropdowns (same language and untrained directions are blocked), copy button
 - Character counter (1,000 max) and Clear (empties the source and translated text)
@@ -185,7 +192,7 @@ python -m pytest
 
 Language codes are the codes the adapter was trained with: `eng` (English), `bcl_South` (Virac), `bcl_North` (Pandan). Internally they are mapped to the NLLB tags stored in `bikol_meta.json` (`eng_Latn`, `war_Latn`, `tgl_Latn`). Supported directions are read from the same file.
 
-**POST `/api/v1/translate`**
+### `POST /api/v1/translate`
 
 Request:
 
@@ -193,17 +200,22 @@ Request:
 { "source_text": "Dai mo na sya paghabulon.", "source_lang": "bcl_South", "target_lang": "eng" }
 ```
 
-Response:
+Response (from our running server):
 
 ```json
-{ "status": "success", "translated_text": "…", "confidence_score": 0.87, "inference_latency_ms": 142 }
+{
+  "status": "success",
+  "translated_text": "Don't chase after him/her anymore.",
+  "confidence_score": 0.8156,
+  "inference_latency_ms": 2717
+}
 ```
 
 - `confidence_score`: geometric-mean token probability of the generated translation (0–1).
-- `inference_latency_ms`: measured time for tokenising, generating and decoding.
+- `inference_latency_ms`: measured time for tokenising, generating and decoding. This example was timed on a CPU, so it is much slower than the Colab T4 figures in Section 5.
 - Errors return `{ "status": "failed", "error": "…" }` with HTTP 400 (unsupported direction), 422 (invalid input, for example same source and target language or empty text), 503 (model still loading or not found) or 500.
 
-**POST `/api/v1/feedback`**
+### `POST /api/v1/feedback`
 
 ```json
 {
@@ -228,9 +240,10 @@ Other endpoints: `GET /api/v1/languages`, `GET /api/v1/health`.
 | `ModuleNotFoundError: backend` | Run the command from inside the project folder |
 | "Cannot connect to MySQL at 127.0.0.1:3306" | Start MySQL (XAMPP Control Panel → MySQL → Start) |
 | "MySQL refused user 'root'" | Put the right password in `.env` (`MYSQL_PASSWORD=...`) and restart uvicorn |
-| Page says "Model failed to load" | Read the error in the terminal. Usually `models/lora_adapter` is missing or incomplete |
+| Page says "Model failed to load" | Read the error in the terminal. Usually `adapter_model.safetensors` or `tokenizer.json` was not downloaded into `models/lora_adapter/` (Section 5) |
 | Translation is slow | Use the merged fp16 model on a GPU, or set `BIKOLE_NUM_BEAMS=1` in `.env` (CUDA build of PyTorch from pytorch.org) |
 | Port 8000 already in use | `uvicorn backend.main:app --reload --port 8001` |
+| `git clone` says the folder already exists (Colab) | Delete the old folder with `!rm -rf bikol-nmt-capstone`, or start a new runtime |
 
 ## 11. Project info
 
@@ -238,3 +251,4 @@ Other endpoints: `GET /api/v1/languages`, `GET /api/v1/health`.
 - Authors: Shiela I. Trinidad, Merylle T. Rodriguez
 - Base model: `facebook/nllb-200-distilled-600M` (NLLB Team, 2022); LoRA via PEFT
 - Random seed: 42 (split, training and evaluation)
+- Tools: Google Colab (training and evaluation), Replit (web interface design help), and Claude and ChatGPT (see the AI tool disclosure in the report)
