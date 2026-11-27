@@ -1,51 +1,99 @@
-# Bikolé — Phase 3: Middleware API & Web Translation Interface
+# Bikolé: Low-Resource Neural Machine Translation for Bikol Dialects
 
-> “Naligis Here, Nagilis There—Bikolé Gets You Everywhere!”
+> "Naligis Here, Nagilis There—Bikolé Gets You Everywhere!"
 
-English ↔ Virac (Southern Bikol) ↔ Pandan (Northern Bikol) translation with the NLLB-200 + LoRA
-model trained in `Bikol_NMT_Phase1_Phase2_v4_1.ipynb`. Feedback is stored in **MySQL**.
+CSTRACKC2 (Data Mining) capstone. English ↔ Virac (Southern Catanduanes Bikol) ↔ Pandan (Northern Catanduanes Bikol) translation, using `facebook/nllb-200-distilled-600M` fine-tuned with one LoRA adapter for six directions. The project has four parts: the corpus, the training script, the evaluation, and a web app with an API.
+
+## 0. Overview and order of steps
+
+1. **Data** — `data/` holds the cleaned corpus and the 70/15/15 split (seed 42, no leakage).
+2. **Train** — run `train.py` (Section 2). Needs a GPU. Tested on a Colab T4.
+3. **Evaluate** — run `notebooks/Bikol_NMT_Phase4_Evaluation.ipynb`. Metric tables are saved in `results/`.
+4. **Serve** — start the API and web page (Sections 4–7). Needs MySQL.
+
+## Repository structure
 
 ```
-bikole/
-├── backend/            FastAPI middleware (Python)
+bikol-nmt-capstone/
+├── README.md
+├── train.py            LoRA fine-tuning script (Section 2)
+├── main.py             API entry point (same app as backend/main.py)
+├── requirements.txt    Python packages
+├── .env.example        MySQL settings template
+├── backend/            FastAPI middleware
 │   ├── main.py         app, error handling, serves the frontend
 │   ├── api.py          POST /api/v1/translate, POST /api/v1/feedback, GET /api/v1/languages, GET /api/v1/health
 │   ├── schemas.py      request/response validation
 │   ├── config.py       settings (.env file / environment variables)
 │   ├── languages.py    language codes used by the model
 │   └── nmt/            model loading, inference, confidence score, input cleaning
-├── database/           MySQL feedback storage (database + table created automatically)
+├── database/           MySQL feedback storage (database and table created automatically)
 ├── frontend/           HTML + CSS + JavaScript (Fetch API) + Lucide icons
-├── models/             ← put your trained lora_adapter folder here
-├── data/Corpus.csv     the parallel dataset
-├── scripts/            export_feedback.py (feedback → CSV / JSONL for retraining)
-├── .env.example        MySQL settings template
+├── models/lora_adapter/  trained LoRA adapter, tokenizer, bikol_meta.json
+├── data/               corpus and split files (Section 1)
+├── results/            metric tables, latency log, error analysis, figures
+├── notebooks/          Phase 1+2 (corpus, training) and Phase 4 (evaluation) notebooks
+├── scripts/            export_feedback.py (feedback → CSV / JSONL)
 └── tests/              pytest tests for the API rules
 ```
 
-## 1. Requirements
+## 1. Data
 
-* **Python 3.10, 3.11 or 3.12** (3.11 recommended) — check with `python --version`
-* **MySQL 8** or **MariaDB 10.4+** running on your computer — e.g. **XAMPP** (start *MySQL* in the XAMPP Control Panel),
-  **MySQL Installer**, WAMP or Laragon
-* **VS Code** with the Python extension
-* ~4 GB free disk space (the NLLB base model is downloaded once, ≈ 2.5 GB) and 8 GB RAM
-* Internet on the first run (to download the base model from Hugging Face)
+| File | What it is |
+|---|---|
+| `data/Corpus.csv` | raw parallel corpus (English, Virac, Pandan) written by the team |
+| `data/corpus_clean_all.csv` | cleaned corpus, 1,569 aligned trios, with a `split` column |
+| `data/train.csv`, `val.csv`, `test.csv` (and `.json`) | 70/15/15 split files (1,098 / 236 / 235 rows) |
+| `data/directional/` | one JSONL file per split and direction; `train.py` reads these |
 
-## 2. Put the trained model in place
+The corpus has no personal information. The cleaning steps, the leakage check and the vocabulary analysis are in the Phase 1 notebook (`notebooks/Bikol_NMT_Phase1_Phase2_v4_1.ipynb`) and in the report.
 
-At the end of the Phase 2 notebook you downloaded `phase2_deliverables.zip`.
-Unzip it and copy `phase2_outputs/multi/lora_adapter` into `bikole/models/` so that this file exists:
+## 2. Train the model (`train.py`)
+
+Needs a GPU. On Google Colab choose **Runtime → Change runtime type → T4 GPU**, then run:
 
 ```
-bikole/models/lora_adapter/bikol_meta.json
+!git clone https://github.com/sitrinidad/bikol-nmt-capstone
+%cd bikol-nmt-capstone
+!pip install -q transformers peft accelerate sacrebleu sentencepiece pandas matplotlib
+!python train.py
 ```
 
-## 3. Set up MySQL
+- Settings: LoRA r=32, alpha=64, dropout 0.2, learning rate 2e-4, seed 42, early stopping on validation BLEU (patience 5). They can be changed with command-line flags, for example `python train.py --r 16 --alpha 32`.
+- The script reads only the train and validation files. The test set is **not** used in training.
+- Output: `models/lora_adapter/` (adapter, tokenizer, `bikol_meta.json`), `results/loss_history.csv`, `results/figures/loss_curves.png`.
 
-1. Start your MySQL server (XAMPP: click **Start** next to *MySQL*).
-2. In the `bikole` folder, copy `.env.example` to a new file named `.env`.
-3. Fill in your MySQL details. XAMPP default is user `root` with an **empty** password:
+## 3. Evaluate
+
+Open `notebooks/Bikol_NMT_Phase4_Evaluation.ipynb` in Colab, upload the adapter folder when asked, and run all cells. It scores the zero-shot model and the LoRA model on the test set (BLEU, chrF++, TER), measures latency, and writes the error-analysis files into `results/`.
+
+Main files in `results/`: `benchmark_table.csv`, `test_metrics_by_direction.csv`, `latency_by_length.csv`, `error_analysis_final.csv`, and `figures/`.
+
+## 4. Web app and API: requirements
+
+- Python 3.10, 3.11 or 3.12 (3.11 recommended). Check with `python --version`
+- MySQL 8 or MariaDB 10.4+ running on your computer, for example XAMPP (start MySQL in the XAMPP Control Panel), MySQL Installer, WAMP or Laragon
+- VS Code with the Python extension
+- About 4 GB free disk space (the NLLB base model is downloaded once, about 2.5 GB) and 8 GB RAM
+- Internet on the first run (to download the base model from Hugging Face)
+
+## 5. Put the trained model in place
+
+The adapter is in `models/lora_adapter/` and also in the GitHub Release: **[RELEASE OR HUGGING FACE LINK]**. This file must exist:
+
+```
+models/lora_adapter/bikol_meta.json
+```
+
+If you trained it yourself, `train.py` already saves the adapter there.
+
+**Faster model (recommended for the 300 ms target).** The default setup uses fp32 and is slower (mean 417 ms in our test). The merged fp16 model had a mean of 246 ms on a Colab T4. To use it, put the merged fp16 model folder in `models/` and set `BIKOLE_MODEL_DIR` in `.env` (Section 8).
+
+## 6. Set up MySQL
+
+1. Start your MySQL server (XAMPP: click **Start** next to MySQL).
+2. In the project folder, copy `.env.example` to a new file named `.env`.
+3. Fill in your MySQL details. The XAMPP default is user `root` with an empty password:
 
 ```
 MYSQL_HOST=127.0.0.1
@@ -55,17 +103,15 @@ MYSQL_PASSWORD=
 MYSQL_DATABASE=bikole
 ```
 
-You don't need to create anything: on start the app creates the `bikole` database and the `feedback` table.
-View saved feedback in phpMyAdmin (http://localhost/phpmyadmin → `bikole` → `feedback`) or with
-`SELECT * FROM bikole.feedback;`.
+You do not need to create anything. When the app starts it creates the `bikole` database and the `feedback` table. To see saved feedback, use phpMyAdmin (`http://localhost/phpmyadmin` → `bikole` → `feedback`) or run `SELECT * FROM bikole.feedback;`. Do not commit your `.env` file.
 
-## 4. Run it from the VS Code terminal
+## 7. Run the app
 
-Open the `bikole` folder in VS Code (**File → Open Folder…**), then open a terminal (**Terminal → New Terminal**).
+Open the project folder in VS Code (**File → Open Folder…**), then open a terminal (**Terminal → New Terminal**).
 
-### Windows (PowerShell)
+**Windows (PowerShell)**
 
-```powershell
+```
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
@@ -74,15 +120,15 @@ copy .env.example .env      # then edit .env if your MySQL has a password
 uvicorn backend.main:app --reload
 ```
 
-If PowerShell says *“running scripts is disabled”*, run this once and then activate again:
+If PowerShell says "running scripts is disabled", run this once and then activate again:
 
-```powershell
+```
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 ```
 
-### macOS / Linux
+**macOS / Linux**
 
-```bash
+```
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
@@ -91,73 +137,73 @@ cp .env.example .env        # then edit .env if your MySQL has a password
 uvicorn backend.main:app --reload
 ```
 
-Then open **http://127.0.0.1:8000** in your browser.
+Then open <http://127.0.0.1:8000> in your browser.
 
-* The first start downloads the base model and loads it (a few minutes). The page shows
-  “Loading the translation model…” and switches to “Model ready” when it can translate.
-* API docs (try the endpoints): **http://127.0.0.1:8000/docs**
-* Stop the server with **Ctrl + C**. Next time: activate the venv, start MySQL, run `uvicorn backend.main:app --reload`.
+- The first start downloads the base model and loads it (a few minutes). The page shows "Loading the translation model…" and changes to "Model ready" when it can translate.
+- API docs (try the endpoints): <http://127.0.0.1:8000/docs>
+- Stop the server with `Ctrl + C`. Next time: activate the venv, start MySQL, run `uvicorn backend.main:app --reload`.
 
-## 5. Run the tests
+### Run the tests
 
-MySQL must be running (the tests use a separate `bikole_test` database that they create and drop):
+MySQL must be running. The tests use a separate `bikole_test` database that they create and drop.
 
-```bash
+```
 python -m pytest
 ```
 
-## 6. How translation works
+## How translation works
 
-* Every sentence is translated by the model — any English, Virac or Pandan sentence can be typed, whether or not
-  it appears in `data/Corpus.csv`.
-* Text with several sentences is translated sentence by sentence; line breaks are kept.
+- Every sentence is translated by the model. Any English, Virac or Pandan sentence can be typed, whether or not it appears in the corpus.
+- Text with several sentences is translated sentence by sentence. Line breaks are kept.
+- NLLB-200 has no Bikol language code, so each language borrows its own existing tag (`eng_Latn` for English, `tgl_Latn` for Pandan, `war_Latn` for Virac). The adapter learns to give these tags a new meaning. This is a technical device, not a claim that Pandan is Tagalog or Virac is Waray.
 
-## 7. Website features
+## Website features
 
-* Side-by-side translation with language dropdowns (same language and untrained directions are blocked), copy button
-* Character counter (1,000 max) and **Clear** (empties the source and translated text)
-* Real confidence score, inference latency and status cards
-* **Translation history** — last 20 translations, saved in your browser; reuse, copy or delete them
-* **Dark mode** — moon/sun button in the top bar; your choice is remembered
-* **Error notifications** for failed requests, offline server, invalid input and the character limit
-* **Report Inaccurate Translation** form saved to MySQL
-* About section with the supported languages; works on desktop, tablet and phone
+- Side-by-side translation with language dropdowns (same language and untrained directions are blocked), copy button
+- Character counter (1,000 max) and Clear (empties the source and translated text)
+- Real confidence score, inference latency and status cards
+- Translation history: last 20 translations, saved in your browser; reuse, copy or delete them
+- Dark mode: moon/sun button in the top bar; your choice is remembered
+- Error notifications for failed requests, offline server, invalid input and the character limit
+- Report Inaccurate Translation form saved to MySQL
+- About section with the supported languages; works on desktop, tablet and phone
 
 ## 8. Settings (`.env` file or environment variables)
 
 | Variable | Default | Meaning |
 |---|---|---|
 | `MYSQL_HOST` / `MYSQL_PORT` | `127.0.0.1` / `3306` | MySQL server |
-| `MYSQL_USER` / `MYSQL_PASSWORD` | `root` / *(empty)* | MySQL login |
+| `MYSQL_USER` / `MYSQL_PASSWORD` | `root` / (empty) | MySQL login |
 | `MYSQL_DATABASE` | `bikole` | Database name (created automatically) |
-| `BIKOLE_MODEL_DIR` | `models/lora_adapter` | Adapter folder (or a merged model folder such as `merged_fp16`) |
-| `BIKOLE_NUM_BEAMS` | `4` | Beam size. `1` = fastest (greedy), helps reach the < 300 ms target on CPU |
+| `BIKOLE_MODEL_DIR` | `models/lora_adapter` | Adapter folder, or a merged model folder such as `merged_fp16` |
+| `BIKOLE_NUM_BEAMS` | `4` | Beam size. 1 = fastest (greedy); helps reach the < 300 ms target on CPU |
 | `BIKOLE_DEVICE` | `auto` | `auto`, `cpu` or `cuda` |
-| `BIKOLE_THREADS` | `0` | CPU threads for PyTorch (`0` = PyTorch default) |
-| `BIKOLE_QUANTIZE` | `0` | `1` = dynamic int8 quantization on CPU (smaller/faster, slightly lower quality) |
+| `BIKOLE_THREADS` | `0` | CPU threads for PyTorch (0 = PyTorch default) |
+| `BIKOLE_QUANTIZE` | `0` | 1 = dynamic int8 quantization on CPU (smaller and faster, slightly lower quality) |
 
 ## 9. API
 
-Language codes are the codes the adapter was trained with: `eng` (English), `bcl_South` (Virac),
-`bcl_North` (Pandan). Internally they are mapped to the NLLB tags stored in `bikol_meta.json`
-(`eng_Latn`, `war_Latn`, `tgl_Latn`). Supported directions are read from the same file.
+Language codes are the codes the adapter was trained with: `eng` (English), `bcl_South` (Virac), `bcl_North` (Pandan). Internally they are mapped to the NLLB tags stored in `bikol_meta.json` (`eng_Latn`, `war_Latn`, `tgl_Latn`). Supported directions are read from the same file.
 
-### POST /api/v1/translate
+**POST `/api/v1/translate`**
+
+Request:
 
 ```json
 { "source_text": "Dai mo na sya paghabulon.", "source_lang": "bcl_South", "target_lang": "eng" }
 ```
 
+Response:
+
 ```json
 { "status": "success", "translated_text": "…", "confidence_score": 0.87, "inference_latency_ms": 142 }
 ```
 
-* `confidence_score` — geometric-mean token probability of the generated translation (0–1), computed by the model.
-* `inference_latency_ms` — measured time for tokenising, generating and decoding.
-* Errors return `{ "status": "failed", "error": "…" }` with HTTP 400 (unsupported direction), 422 (invalid input,
-  e.g. same source and target language or empty text), 503 (model still loading / not found) or 500.
+- `confidence_score`: geometric-mean token probability of the generated translation (0–1).
+- `inference_latency_ms`: measured time for tokenising, generating and decoding.
+- Errors return `{ "status": "failed", "error": "…" }` with HTTP 400 (unsupported direction), 422 (invalid input, for example same source and target language or empty text), 503 (model still loading or not found) or 500.
 
-### POST /api/v1/feedback
+**POST `/api/v1/feedback`**
 
 ```json
 {
@@ -170,17 +216,25 @@ Language codes are the codes the adapter was trained with: `eng` (English), `bcl
 }
 ```
 
-Saved in the `feedback` table of the MySQL database. Returns 503 with a clear message when MySQL is not reachable.
-Export it with `python scripts/export_feedback.py`.
+Saved in the `feedback` table of the MySQL database. Returns 503 with a clear message when MySQL is not reachable. Export it with `python scripts/export_feedback.py`.
+
+Other endpoints: `GET /api/v1/languages`, `GET /api/v1/health`.
 
 ## 10. Troubleshooting
 
 | Problem | Fix |
 |---|---|
-| `uvicorn` is not recognized | The venv is not active — run the activate command again, or use `python -m uvicorn backend.main:app --reload` |
-| `ModuleNotFoundError: backend` | Run the command from inside the `bikole` folder |
-| “Cannot connect to MySQL at 127.0.0.1:3306” | Start MySQL (XAMPP Control Panel → MySQL → Start) |
-| “MySQL refused user 'root'” | Put the right password in `.env` (`MYSQL_PASSWORD=...`) and restart uvicorn |
-| Page says “Model failed to load” | Read the error in the terminal. Usually `models/lora_adapter` is missing or incomplete |
-| Translation is slow | Set `BIKOLE_NUM_BEAMS=1` in `.env`; use a GPU if you have one (CUDA build of PyTorch from pytorch.org) |
+| `uvicorn` is not recognized | The venv is not active. Run the activate command again, or use `python -m uvicorn backend.main:app --reload` |
+| `ModuleNotFoundError: backend` | Run the command from inside the project folder |
+| "Cannot connect to MySQL at 127.0.0.1:3306" | Start MySQL (XAMPP Control Panel → MySQL → Start) |
+| "MySQL refused user 'root'" | Put the right password in `.env` (`MYSQL_PASSWORD=...`) and restart uvicorn |
+| Page says "Model failed to load" | Read the error in the terminal. Usually `models/lora_adapter` is missing or incomplete |
+| Translation is slow | Use the merged fp16 model on a GPU, or set `BIKOLE_NUM_BEAMS=1` in `.env` (CUDA build of PyTorch from pytorch.org) |
 | Port 8000 already in use | `uvicorn backend.main:app --reload --port 8001` |
+
+## 11. Project info
+
+- Course: CSTRACKC2 – Data Mining, AY 2026–2027, first semester
+- Authors: Shiela I. Trinidad, Merylle T. Rodriguez
+- Base model: `facebook/nllb-200-distilled-600M` (NLLB Team, 2022); LoRA via PEFT
+- Random seed: 42 (split, training and evaluation)
